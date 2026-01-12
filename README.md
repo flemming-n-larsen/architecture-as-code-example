@@ -1,5 +1,8 @@
 # Architecture Diagrams in Code
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/flemming-n-larsen/architecture-as-code-example?style=social)](https://github.com/flemming-n-larsen/architecture-as-code-example)
+
 A complete example demonstrating how to keep architecture diagrams **in your repository** using Markdown + Mermaid, instead of expensive external tools.
 
 ## 🎯 The Problem This Solves
@@ -30,6 +33,13 @@ All architecture, requirements, and user stories are in the `docs/` folder:
 - **[Architecture Overview](docs/architecture/README.md)** — System design and domain model
 - **[Requirements](docs/requirements.md)** — Functional and non-functional requirements
 - **[User Stories](docs/user-stories/README.md)** — Feature backlog and acceptance criteria
+
+### 📌 Start Here
+
+> **New here?** Start with these two files to understand the approach:
+
+1. **[📊 Architecture Overview](docs/architecture/README.md)** — Complete domain model with all 5 entities
+2. **[🔄 Create Order Flow](docs/architecture/flows/create-order.md)** — Sequence diagram showing real-world workflow
 
 ### Quick Links
 
