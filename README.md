@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/flemming-n-larsen/architecture-as-code-example?style=social)](https://github.com/flemming-n-larsen/architecture-as-code-example)
 
-A complete example demonstrating how to keep architecture diagrams **in your repository** using Markdown + Mermaid, instead of expensive external tools.
+A complete example demonstrating how to keep architecture diagrams **in your repository** using Markdown + Mermaid, instead of expensive external tools. This repository also demonstrates **OpenSpec integration** for managing specifications and change proposals with AI agents.
 
 ## 🎯 The Problem This Solves
 
@@ -24,6 +24,48 @@ Keep all architecture diagrams **as plain text Mermaid** in Markdown files, vers
 ✅ **Tool-Agnostic** — No expensive licenses, works in any IDE or text editor  
 ✅ **Export Anywhere** — Convert to PNG, SVG, Confluence, or draw.io when needed  
 ✅ **Modular** — Each concept (entity, flow, story) in its own file for easy navigation
+
+## 📂 Repository Structure
+
+```
+├── AGENTS.md                         # AI agent guidelines and instructions
+├── docs/                             # Architecture diagrams and documentation
+│   ├── architecture/
+│   │   ├── domain/                   # Entity diagrams & relationships
+│   │   │   ├── customer.md
+│   │   │   ├── order.md
+│   │   │   ├── order-item.md
+│   │   │   ├── product.md
+│   │   │   └── payment.md
+│   │   ├── flows/                    # Sequence diagrams & workflows
+│   │   │   ├── create-order.md
+│   │   │   ├── payment-processing.md
+│   │   │   └── inventory-management.md
+│   │   └── decisions/                # Architecture Decision Records
+│   │       └── adr-0001-uuid-primary-keys.md
+│   ├── user-stories/                 # Feature backlog
+│   └── requirements.md               # System requirements
+├── openspec/                         # Specifications (OpenSpec structure)
+│   ├── specs/                        # Source of truth specifications
+│   │   ├── customer/
+│   │   │   └── spec.md
+│   │   ├── order/
+│   │   │   └── spec.md
+│   │   └── payment/
+│   │       └── spec.md
+│   └── changes/                      # Active and archived change proposals
+│       ├── loyalty-points/           # Active change proposal
+│       │   ├── proposal.md
+│       │   ├── tasks.md
+│       │   └── specs/
+│       │       └── customer/
+│       │           └── spec.md       # Spec delta for this change
+│       └── archived/                 # Completed change proposals
+│           └── user-registration/
+│               ├── proposal.md
+│               └── tasks.md
+└── src/                              # Application code
+```
 
 ## 📚 Documentation Structure
 
@@ -54,6 +96,14 @@ All architecture, requirements, and user stories are in the `docs/` folder:
   - [Create Order Flow](docs/architecture/flows/create-order.md)
   - [Payment Processing Flow](docs/architecture/flows/payment-processing.md)
   - [Inventory Management Flow](docs/architecture/flows/inventory-management.md)
+
+- **Specifications (OpenSpec):**
+  - [Customer Spec](openspec/specs/customer/spec.md)
+  - [Order Spec](openspec/specs/order/spec.md)
+  - [Payment Spec](openspec/specs/payment/spec.md)
+
+- **Change Proposals:**
+  - [Loyalty Points (Active)](openspec/changes/loyalty-points/proposal.md)
 
 ## 🚀 How This Repository Works
 
@@ -122,6 +172,63 @@ git commit -m "feat: add customer tier system"
 - **Single source of truth** in the repository
 - Diagrams are **reviewed alongside code**
 - No expensive tool licenses required
+
+## 🤖 OpenSpec Integration
+
+This repository demonstrates how **OpenSpec** integrates with the architecture-as-code approach for managing specifications and AI-assisted development.
+
+### AI Terminology
+
+This example uses two AI categories:
+
+| Term           | Description                                                                    | Examples                                 | Use For                                                     |
+|:---------------|:-------------------------------------------------------------------------------|:-----------------------------------------|:------------------------------------------------------------|
+| **Strong AI**  | Premium, frontier-class models with advanced reasoning and high-level strategy | Claude 4.5 Opus, Gemini Ultra            | Spec creation, architectural planning, requirement analysis |
+| **Regular AI** | High-performance coding assistants, cost-effective for implementation          | Claude 4.5 Sonnet, GPT-5.2, Gemini 3 Pro | Code implementation, task execution, archiving              |
+
+When we say "AI agent", we mean an **agentic AI** that can execute multi-step tasks, read/write files, and run commands autonomously.
+
+### How The Parts Work Together
+
+| Component | Purpose | Examples |
+|:----------|:--------|:---------|
+| **AGENTS.md** | Guidelines for AI agents | Code style, conventions, patterns, what to avoid |
+| **/docs** | System structure | Class diagrams, ER schemas, sequence flows, entity relationships |
+| **/openspec** | System behavior | Source of truth specifications, change proposals, business rules |
+
+### AI Agent Usage Pattern
+
+**Planning Mode (Strong AI):**
+```
+"Create a new change proposal for: Add customer loyalty points system"
+
+"Review this change proposal and ask questions about edge cases"
+
+"Archive the loyalty-points change and update the specs"
+```
+
+**Execution Mode (Regular AI):**
+```typescript
+// Reference: /openspec/changes/loyalty-points/specs/customer/spec.md
+// Follow guidelines in AGENTS.md
+// Implement LoyaltyPoints entity following business rules
+
+class LoyaltyPoints {
+    // AI generates code that follows the specification and AGENTS.md guidelines...
+}
+```
+
+**💡 Tip:** Always reference both the specification AND AGENTS.md in your prompts for consistent, architecture-aligned code generation.
+
+### OpenSpec Workflow
+
+1. **Create Initial Specs:** Document existing system behavior in `/openspec/specs/`
+2. **Foundation Review:** Ensure baseline specs are accurate
+3. **Create Change Proposal:** Create `/openspec/changes/<feature>/` with proposal.md and tasks.md
+4. **Review:** Use strong AI to refine and ask clarifying questions
+5. **Execute:** Use regular AI to implement tasks one at a time
+6. **Archive:** Move completed change to `changes/archived/` and merge spec deltas
+7. **Iterate:** Create next change proposal
 
 ## 📖 Example: Customer Entity
 
@@ -251,6 +358,27 @@ This repository demonstrates:
 - **DRY Principle** — Define each concept once, reference via links
 - **Progressive Disclosure** — Navigate to what you need, not forced linear reading
 - **AI Collaboration** — Plain text enables AI agents to help maintain docs
+- **Spec-Driven Development** — Specifications document intent before implementation
+- **Change Management** — Proposals track system evolution with clear audit trails
+
+### Key Benefits
+
+**For AI Agents:**
+- **Complete context:** Structure (/docs), behavior (/openspec), and guidelines (AGENTS.md)
+- **Clear boundaries:** Specifications prevent architectural violations
+- **Consistent patterns:** AGENTS.md ensures consistent code style across AI sessions
+
+**For Developers:**
+- **Brownfield friendly:** Works with existing codebases (not just greenfield)
+- **Chat-based:** Simple prompts, no complex templates
+- **Version controlled:** Specifications and guidelines evolve with code in same repository
+- **Predictable AI:** AGENTS.md creates consistent AI behavior across team members
+
+**For Architecture:**
+- **Integrity maintained:** AI agents understand design intent
+- **Evolution tracked:** Change specifications document system growth
+- **Knowledge preserved:** Decisions and reasoning captured in specifications
+- **Standards enforced:** AGENTS.md ensures code quality and consistency
 
 ## 📚 Related Resources
 
