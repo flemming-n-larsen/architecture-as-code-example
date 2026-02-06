@@ -5,9 +5,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Markdown](https://img.shields.io/badge/Docs-Markdown-blue.svg)](https://www.markdownguide.org/)
 
-A production-ready example demonstrating how to structure and maintain architecture documentation **as code** in your
-repository. This approach combines Architecture Decision Records (ADRs), C4 diagrams, and domain models—all as plain
-text, version-controlled, and AI-readable.
+An example demonstrating how to structure and maintain architecture documentation **as code** in your repository.
+This approach combines Architecture Decision Records (ADRs), C4 diagrams, and domain models—all as plain text,
+version-controlled, and AI-readable.
 
 > **📖 Full Documentation:** See the [Architecture Hub](./architecture/README.md) for a complete overview of all architectural artifacts.
 
