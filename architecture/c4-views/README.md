@@ -5,7 +5,7 @@ This folder contains the project's C4 architecture views (Context, Container, Co
 ## Quick Navigation
 
 ### 1. **System Context** — The Big Picture
-**[→ system-context.md](./system-context.md)**
+**[👉 system-context.md](./system-context.md)**
 
 Start here for a bird's-eye view of the entire e-commerce platform. This diagram shows:
 - The **E-Commerce Platform** at the center
@@ -18,7 +18,7 @@ Start here for a bird's-eye view of the entire e-commerce platform. This diagram
 ---
 
 ### 2. **Container View** — System Decomposition
-**[→ container.md](./container.md)**
+**[👉 container.md](./container.md)**
 
 Zoom into the platform's internal structure to see the major building blocks:
 - **Frontend:** Web Application (React/TypeScript SPA)
@@ -34,7 +34,7 @@ Zoom into the platform's internal structure to see the major building blocks:
 ### 3. **Component Views** — Deep Dives into Services
 
 #### Order Service Component
-**[→ order-service-component.md](./order-service-component.md)**
+**[👉 order-service-component.md](./order-service-component.md)**
 
 Internal architecture of the Order Service microservice:
 - **API & Request Handling:** Order Controller, Error Handler
@@ -48,7 +48,7 @@ Internal architecture of the Order Service microservice:
 ---
 
 #### Payment Service Component
-**[→ payment-service-component.md](./payment-service-component.md)**
+**[👉 payment-service-component.md](./payment-service-component.md)**
 
 Internal architecture of the Payment Service microservice:
 - **API & Request Handling:** Payment Controller, Error Handler

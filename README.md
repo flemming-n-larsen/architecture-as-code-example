@@ -152,7 +152,7 @@ graph TB
 
 ### 1. Architecture Decision Records (ADRs) — The "Why"
 
-**[→ architecture/adr/](./architecture/adr/)**
+**[👉 architecture/adr/](./architecture/adr/)**
 
 ADRs capture the context, alternatives, and rationale behind architectural decisions. Six months from now, when someone
 asks "Why did we choose UUIDs instead of auto-increment IDs?", the answer is in an ADR—not lost in Slack.
@@ -173,7 +173,7 @@ Each ADR includes:
 
 ### 2. C4 Views — The "What"
 
-**[→ architecture/c4-views/](./architecture/c4-views/)**
+**[👉 architecture/c4-views/](./architecture/c4-views/)**
 
 C4 diagrams show the system structure at multiple zoom levels, like a map you can zoom in and out of:
 
@@ -195,7 +195,7 @@ semantics, and generates professional-looking SVGs.
 
 ### 3. Domain Models & Flows — The "How"
 
-**[→ architecture/models/](./architecture/models/)**
+**[👉 architecture/models/](./architecture/models/)**
 
 Domain models explain entity relationships and how business processes are executed across the system:
 
@@ -639,7 +639,7 @@ After exploring this repository, you'll understand:
 
 ✅ How ADRs, C4 views, and domain models work together  
 ✅ How to connect architecture to specifications (OpenSpec)  
-✅ How to maintain the feedback loop: Architecture → Spec → Code → Validation  
+✅ How to maintain the feedback loop: Architecture 👉 Spec 👉 Code 👉 Validation  
 ✅ How to scale this approach as systems grow
 
 ## 📝 Making Changes
@@ -731,7 +731,7 @@ This repository demonstrates a fundamental shift: **architecture as executable c
 **Progressive Disclosure**
 
 - Navigate to what you need (hyperlinked documentation)
-- Multiple zoom levels (system → container → component)
+- Multiple zoom levels (system 👉 container 👉 component)
 - Modular structure scales to large systems
 - Each concept in its own file
 

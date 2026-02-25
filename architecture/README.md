@@ -2,10 +2,13 @@
 
 This directory contains comprehensive architecture documentation for the e-commerce platform, organized into key sections for easy navigation.
 
+You can read my blog about [Architecture as Code](https://architecture-as-code.hashnode.dev/) which uses this repository
+to demonstrate how the concept.
+
 ## 📚 Documentation Index
 
 ### 1. **Architecture Decision Records (ADRs)**
-**[→ /adr](./adr/)**
+**[👉 /adr](./adr/)**
 
 Captures the significant architectural decisions made during system design and evolution.
 - [0001: Use UUID Primary Keys](./adr/0001-use-uuid-primary-keys.md)
@@ -17,7 +20,7 @@ Captures the significant architectural decisions made during system design and e
 ---
 
 ### 2. **C4 Views**
-**[→ /c4-views](./c4-views/)**
+**[👉 /c4-views](./c4-views/)**
 
 Hierarchical architecture diagrams at different levels of abstraction (Context, Container, Component).
 - **System Context** — High-level view of the entire platform and external systems
@@ -29,7 +32,7 @@ Hierarchical architecture diagrams at different levels of abstraction (Context, 
 ---
 
 ### 3. **Architecture Models**
-**[→ /models](./models/)**
+**[👉 /models](./models/)**
 
 Core domain models and business flow documentation that serve as the foundation for the system.
 - **Domain Models** — Core entities (Customer, Order, Payment, Product, etc.) and their relationships

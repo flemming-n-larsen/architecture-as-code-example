@@ -25,7 +25,7 @@ Domain models represent the core entities and their business logic. Each model d
 | [Payment](./domain/payment.md) | Payment transactions and method management |
 | [Product](./domain/product.md) | Inventory products with pricing and stock management |
 
-**[Full Domain Models Documentation →](./domain/README.md)**
+**[👉 Full Domain Models Documentation](./domain/README.md)**
 
 ---
 
@@ -41,7 +41,7 @@ Business flows describe how entities interact across services to complete import
 | [Payment Processing](./flows/payment-processing.md) | Payment transaction handling and status updates |
 | [Inventory Management](./flows/inventory-management.md) | Stock tracking and allocation across orders |
 
-**[Full Business Flows Documentation →](./flows/README.md)**
+**[👉 Full Business Flows Documentation](./flows/README.md)**
 
 ---
 

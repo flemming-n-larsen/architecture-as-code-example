@@ -164,9 +164,9 @@ The **E-Commerce Platform** 🛒 is the central software system that serves as t
 ## Next Steps in Architecture
 
 **Ready to dive deeper?**
-- **[→ Container View](./container.md)** — Explore the internal structure and microservices
-- **[→ Order Service Component](./order-service-component.md)** — See how orders are processed
-- **[→ Payment Service Component](./payment-service-component.md)** — Understand payment workflows
+- **[👉 Container View](./container.md)** — Explore the internal structure and microservices
+- **[👉 Order Service Component](./order-service-component.md)** — See how orders are processed
+- **[👉 Payment Service Component](./payment-service-component.md)** — Understand payment workflows
 
 ---
 
