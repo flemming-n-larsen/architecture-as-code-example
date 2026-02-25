@@ -63,7 +63,7 @@ levels, and domain models explain *how* entities relate and workflows execute.
 
 | Category | Link | Description |
 |:---------|:-----|:------------|
-| **ADRs** | [architecture/adr/](./architecture/adr/) | Architecture Decision Records |
+| **ADRs** | [architecture/adr/](./architecture/adr/) | Architecture Decision Records (MADR format). See `architecture/adr/README.md` for how to propose and review ADRs. |
 | **C4 Views** | [architecture/c4-views/](./architecture/c4-views/) | System diagrams at multiple zoom levels |
 | **Domain Models** | [architecture/models/](./architecture/models/) | Entity and workflow documentation |
 | **Specifications** | [openspec/specs/](./openspec/specs/) | Detailed behavior specifications |

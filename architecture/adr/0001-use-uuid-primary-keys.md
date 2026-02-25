@@ -1,10 +1,23 @@
+#---
+id: 0001
+title: Use UUIDs for Primary Keys
+status: Accepted
+date: 2026-01-12
+deciders:
+  - Architecture Team
+tags:
+  - database
+  - uuid
+superseded_by: null
+---
+
 # ADR-0001: Use UUIDs for Primary Keys
 
 **Status:** Accepted
 
 **Date:** 2026-01-12
 
-**Decision Makers:** Architecture Team
+**Deciders:** Architecture Team
 
 ---
 

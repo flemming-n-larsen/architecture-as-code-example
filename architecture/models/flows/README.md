@@ -20,8 +20,9 @@ The system implements three core business flows that handle order processing, in
 - Payment initiation and confirmation
 
 **Sequence Diagram:**
-```
-Client → OrderService → ProductService → Database → PaymentService
+```mermaid
+graph LR
+    Client --> OrderService --> ProductService --> Database --> PaymentService
 ```
 
 **Main Steps:**
@@ -64,8 +65,9 @@ Client → OrderService → ProductService → Database → PaymentService
 - **Inventory Audit Flow:** Adjusts stock based on physical counts
 
 **Sequence Diagram (Stock Update):**
-```
-OrderService → ProductService → Database (with FOR UPDATE locking)
+```mermaid
+graph LR
+    OrderService --> ProductService --> DB["Database\n(FOR UPDATE locking)"]
 ```
 
 **Stock Movement Tracking:**
@@ -112,8 +114,9 @@ All stock changes are logged in a `stock_movements` table with audit trail:
 - Fraud prevention
 
 **Sequence Diagram:**
-```
-OrderService → PaymentService → StripeGateway → Database & NotificationService
+```mermaid
+graph LR
+    OrderService --> PaymentService --> Database --> StripeGateway --> NotificationService
 ```
 
 **Payment States:**
@@ -121,6 +124,7 @@ OrderService → PaymentService → StripeGateway → Database & NotificationSer
 - `successful` → `refunded` (optional)
 
 **Failure Scenarios:**
+
 | Reason | Description | Action |
 |--------|-------------|--------|
 | `insufficient_funds` | Not enough balance | Suggest different payment method |
