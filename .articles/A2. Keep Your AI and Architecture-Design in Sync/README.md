@@ -9,8 +9,7 @@
 ---
 
 **📖 Prerequisites:** This article builds directly on the concepts from the first article:
-[Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)
-([also on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools)).
+[Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md).
 If you haven't read it yet, start there first—it establishes the foundation of architecture-as-code that this article
 extends.
 
@@ -489,7 +488,7 @@ make this practice more critical—they can generate code much faster, so the co
 ## Getting Started
 
 0. **Read the prerequisite article first** - If you haven't already,
-   read [Keep Your Architecture Diagrams in Code, Not in Tools](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools)
+   read [Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)
    to establish the `/docs` foundation
 1. **Pick an existing project** (brownfield approach - like most real work)
 2. **Create an `/openspec` folder** alongside your existing code
@@ -544,7 +543,7 @@ understand not just what you're building, but why you're building it that way.
 
 The repository with the complete OpenSpec integration will be available shortly:
 
-👉 **[architecture-as-code-example (with OpenSpec)](https://github.com/flemming-n-larsen/architecture-as-code-example)**
+👉 **[architecture-as-code-example (with OpenSpec)](/README.md)**
 
 ---
 

@@ -672,8 +672,9 @@ This completes the Architecture as Code series. For more details, explore the co
 
 **Previous Articles:**
 
-← [Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md) ([Hashnode](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools))
+← [Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md) ([Hashnode](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools))<br>
 ← [Keep Your AI and Architecture-Design in Sync](../A2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md) ([Hashnode](https://architecture-as-code.hashnode.dev/keep-your-ai-and-architecturedesign-in-sync))
+
 
 **Repository:** [architecture-as-code-example](https://github.com/flemming-n-larsen/architecture-as-code-example/tree/44eeb3a97268ca0948c8d3e8d947dddc2fa1a20e)
 

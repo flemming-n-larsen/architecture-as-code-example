@@ -121,7 +121,7 @@ stateDiagram-v2
 
 Every file links to related concepts. The `Order` entity links to `Customer`, `OrderItem`, `Payment`, and the `Create Order` flow. Navigation is hyperlinked, so you explore based on what you need.
 
-![Hyperlinked navigation: explore the architecture based on what you need](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/screenshots/screenshot-3.png?raw=true)
+![Hyperlinked navigation: explore the architecture based on what you need](/.articles/.screenshots/customer-order-ER-diagram.png)
 *Hyperlinked navigation: explore the architecture based on what you need*
 
 ---
@@ -163,7 +163,7 @@ Mermaid is open source. Markdown is universal. Your documentation isn't trapped 
 
 The example repository shows exactly how to structure this:
 
-👉 **[architecture-as-code-example](https://github.com/flemming-n-larsen/architecture-as-code-example)**
+👉 **[architecture-as-code-example](/README.md)**
 
 Use it as inspiration. Adapt the structure and patterns for your own domain. Start with one entity and grow from there.
 
@@ -181,7 +181,7 @@ You might never go back to Confluence diagrams again.
 
 ---
 
-**Repository:** [architecture-as-code-example](https://github.com/flemming-n-larsen/architecture-as-code-example)
+**Repository:** [architecture-as-code-example](/README.md)
 
 ---
 
