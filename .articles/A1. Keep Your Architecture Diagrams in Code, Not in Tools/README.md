@@ -37,7 +37,7 @@ No external tools. No expensive licenses. No sync problems.
 
 Everything that describes your system—domain entities, database schemas, workflow sequences, state transitions—lives in `docs/` alongside your source code.
 
-![Modular organization: one file per entity, versioned with your code](/.articles/.screenshots/folder-structure.png)
+![Modular organization: one file per entity, versioned with your code](/.articles/.screenshots/folder-structure.png)<br>
 *Modular organization: one file per entity, versioned with your code*
 
 Each entity, workflow, and decision gets its own Markdown file with embedded Mermaid diagrams. When you refactor the `Order` service, you update `docs/architecture/domain/order.md` in the same pull request. Reviewers see the architecture change alongside the implementation.
@@ -83,8 +83,6 @@ classDiagram
     }
 ```
 
-![Class diagram showing Order entity structure](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/screenshots/order-class-diagram.png?raw=true)
-
 ER Diagram:
 
 ```mermaid
@@ -101,8 +99,6 @@ erDiagram
     }
 ```
 
-![ER diagram showing Order database schema](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/screenshots/order-ER-diagram.png?raw=true)
-
 State Diagram:
 
 ```mermaid
@@ -114,14 +110,17 @@ stateDiagram-v2
     shipped --> delivered: Customer receives order
 ```
 
-![State diagram showing Order lifecycle](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/screenshots/order-state-diagram.png?raw=true)
-
 **Related Entities:** [Customer](../../docs/architecture/models/domain/customer.md) · [OrderItem](../../docs/architecture/models/domain/order-item.md) · [Payment](../../docs/architecture/models/domain/payment.md)  
 **Workflows:** [Create Order](../../docs/architecture/models/flows/create-order.md) · [Payment Processing](../../docs/architecture/models/flows/payment-processing.md)
 
 Every file links to related concepts. The `Order` entity links to `Customer`, `OrderItem`, `Payment`, and the `Create Order` flow. Navigation is hyperlinked, so you explore based on what you need.
 
-![Hyperlinked navigation: explore the architecture based on what you need](/.articles/.screenshots/customer-order-ER-diagram.png)
+```text
+**Related Entities:** [Customer](../domain/customer.md) · [OrderItem](../domain/order-item.md) · [Payment](../domain/payment.md)  
+
+**Workflows:** [Create Order](../flows/create-order.md) · [Payment Processing](../flows/payment-processing.md)
+```
+
 *Hyperlinked navigation: explore the architecture based on what you need*
 
 ---
