@@ -4,18 +4,7 @@
 
 ---
 
-## 📖 This is Part 2 of 3
-
-**Series: Architecture as Code**
-
-1. [Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)
-   - [Also on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools)
-
-2. **Keep Your AI and Architecture-Design in Sync** ← You are here
-   - [Read in this repository](./README.md) | [Read on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-ai-and-architecturedesign-in-sync)
-
-3. [Architecture as Code in Practice](../A3.%20Architecture%20as%20Code%20in%20Practice/README.md)
-   - [Also on Hashnode](https://architecture-as-code.hashnode.dev/architecture-as-code-in-practice)
+👉 [Read on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-ai-and-architecturedesign-in-sync)
 
 ---
 

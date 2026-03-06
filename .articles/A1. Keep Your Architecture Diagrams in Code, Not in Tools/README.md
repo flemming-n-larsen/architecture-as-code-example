@@ -4,18 +4,7 @@
 
 ---
 
-## 📖 This is Part 1 of 3
-
-**Series: Architecture as Code**
-
-1. **Keep Your Architecture Diagrams in Code, Not in Tools** ← You are here
-   - [Read in this repository](./README.md) | [Read on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools)
-
-2. [Keep Your AI and Architecture-Design in Sync](../A2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)
-   - [Also on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-ai-and-architecturedesign-in-sync)
-
-3. [Architecture as Code in Practice](../A3.%20Architecture%20as%20Code%20in%20Practice/README.md)
-   - [Also on Hashnode](https://architecture-as-code.hashnode.dev/architecture-as-code-in-practice)
+👉 [Read on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools)
 
 ---
 
@@ -48,7 +37,7 @@ No external tools. No expensive licenses. No sync problems.
 
 Everything that describes your system—domain entities, database schemas, workflow sequences, state transitions—lives in `docs/` alongside your source code.
 
-![Modular organization: one file per entity, versioned with your code](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/screenshots/folder-structure.png?raw=true)
+![Modular organization: one file per entity, versioned with your code](/.articles/.screenshots/folder-structure.png)
 *Modular organization: one file per entity, versioned with your code*
 
 Each entity, workflow, and decision gets its own Markdown file with embedded Mermaid diagrams. When you refactor the `Order` service, you update `docs/architecture/domain/order.md` in the same pull request. Reviewers see the architecture change alongside the implementation.
@@ -59,13 +48,13 @@ Each entity, workflow, and decision gets its own Markdown file with embedded Mer
 
 I've published a complete example repository demonstrating this approach:
 
-👉 **[architecture-as-code-example](https://github.com/flemming-n-larsen/architecture-as-code-example)**
+👉 **[architecture-as-code-example](/README.md)**
 
 It's a realistic e-commerce domain with 5 entities (Customer, Order, OrderItem, Product, Payment), 3 workflows, and 24 Mermaid diagrams—all in plain text Markdown.
 
 Here's what GitHub renders natively, with no plugins or external tools:
 
-![GitHub renders Mermaid diagrams natively—no external tools needed](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/screenshots/create-order-flow.png?raw=true)
+![GitHub renders Mermaid diagrams natively—no external tools needed](/.articles/.screenshots/create-order-flow.png)
 *GitHub renders Mermaid diagrams natively—no external tools needed*
 
 The sequence diagram above shows a complete order creation flow: stock validation, transaction handling, payment processing, and error cases. It's all plain text in a `.md` file, but GitHub (and your IDE) renders it as a visual diagram.

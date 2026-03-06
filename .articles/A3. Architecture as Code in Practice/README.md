@@ -4,18 +4,7 @@
 
 ---
 
-## 📖 This is Part 3 of 3
-
-**Series: Architecture as Code**
-
-1. [Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)
-   - [Also on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools)
-
-2. [Keep Your AI and Architecture-Design in Sync](../A2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)
-   - [Also on Hashnode](https://architecture-as-code.hashnode.dev/keep-your-ai-and-architecturedesign-in-sync)
-
-3. **Architecture as Code in Practice** ← You are here
-   - [Read in this repository](./README.md) | [Read on Hashnode](https://architecture-as-code.hashnode.dev/architecture-as-code-in-practice)
+👉 [Read on Hashnode](https://architecture-as-code.hashnode.dev/architecture-as-code-in-practice)
 
 ---
 
@@ -485,9 +474,9 @@ Cross‑link documents so readers can jump between related artifacts. For exampl
 ```markdown
 ## Related documentation
 
-- [Container view](../../architecture/c4-views/container.md) — shows this service in context
-- [ADR‑0003: Event‑Driven Communication](../../architecture/adr/0003-event-driven-communication.md)
-- [Order domain model](../../docs/architecture/models/domain/order.md)
+- [Container view](/docs/architecture/c4-views/container.md) — shows this service in context
+- [ADR‑0003: Event‑Driven Communication](/docs/architecture/adr/0003-event-driven-communication.md)
+- [Order domain model](/docs/architecture/models/domain/order.md)
 ```
 
 This pattern creates a simple, navigable web of knowledge.
