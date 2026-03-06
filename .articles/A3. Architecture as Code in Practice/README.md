@@ -212,9 +212,9 @@ The README includes a status table:
 
 | ADR | Title | Status | Date |
 |-----|-------|--------|------|
-| [0001](../../architecture/adr/0001-use-uuid-primary-keys.md) | Use UUIDs for Primary Keys | Accepted | 2026-01-12 |
-| [0002](../../architecture/adr/0002-microservices-architecture.md) | Adopt Microservices Architecture | Accepted | 2026-01-15 |
-| [0003](../../architecture/adr/0003-event-driven-communication.md) | Use Event-Driven Communication | Accepted | 2026-01-20 |
+| [0001](../../docs/architecture/adr/0001-use-uuid-primary-keys.md) | Use UUIDs for Primary Keys | Accepted | 2026-01-12 |
+| [0002](../../docs/architecture/adr/0002-microservices-architecture.md) | Adopt Microservices Architecture | Accepted | 2026-01-15 |
+| [0003](../../docs/architecture/adr/0003-event-driven-communication.md) | Use Event-Driven Communication | Accepted | 2026-01-20 |
 
 This makes it trivial to see all decisions at a glance.
 
@@ -487,7 +487,7 @@ Cross‑link documents so readers can jump between related artifacts. For exampl
 
 - [Container view](../../architecture/c4-views/container.md) — shows this service in context
 - [ADR‑0003: Event‑Driven Communication](../../architecture/adr/0003-event-driven-communication.md)
-- [Order domain model](../../architecture/models/domain/order.md)
+- [Order domain model](../../docs/architecture/models/domain/order.md)
 ```
 
 This pattern creates a simple, navigable web of knowledge.

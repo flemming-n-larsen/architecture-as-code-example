@@ -78,7 +78,7 @@ When implementing features:
 ## Related Documentation
 
 - **[AGENTS.md](../AGENTS.md)** - Guidelines for AI agents working with this codebase
-- **[Architecture](../architecture/)** - System architecture, ADRs, C4 diagrams
-- **[Domain Models](../architecture/models/)** - Entity definitions and relationships
+- **[Architecture](../docs/architecture/)** - System architecture, ADRs, C4 diagrams
+- **[Domain Models](../docs/architecture/models/)** - Entity definitions and relationships
 - **[User Stories](../docs/user-stories/)** - User-facing feature descriptions
 

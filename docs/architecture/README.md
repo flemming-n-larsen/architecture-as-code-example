@@ -11,9 +11,9 @@ to demonstrate how the concept.
 **[👉 /adr](./adr/)**
 
 Captures the significant architectural decisions made during system design and evolution.
-- [0001: Use UUID Primary Keys](./adr/0001-use-uuid-primary-keys.md)
-- [0002: Microservices Architecture](./adr/0002-microservices-architecture.md)
-- [0003: Event-Driven Communication](./adr/0003-event-driven-communication.md)
+- [0001: Use UUID Primary Keys](adr/0001-use-uuid-primary-keys.md)
+- [0002: Microservices Architecture](adr/0002-microservices-architecture.md)
+- [0003: Event-Driven Communication](adr/0003-event-driven-communication.md)
 
 *Best for:* Understanding the "why" behind architectural choices and their trade-offs.
 
@@ -44,6 +44,6 @@ Core domain models and business flow documentation that serve as the foundation 
 
 ## Quick Start
 
-1. **New to the project?** Start with [C4 Views - System Context](./c4-views/system-context.md)
+1. **New to the project?** Start with [C4 Views - System Context](c4-views/system-context.md)
 2. **Want to understand design decisions?** Check the [ADRs](./adr/)
 3. **Need to understand data models?** See [Architecture Models](./models/)

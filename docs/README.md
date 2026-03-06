@@ -4,24 +4,25 @@ Welcome! This documentation describes the architecture, requirements, and user s
 
 ## 🧭 Quick Navigation
 
+### 🏗️ Architecture Documentation
 - **[Architecture Overview](architecture/)** — System design, entities, and workflows
   - [Domain Model](architecture/domain/) — Core business entities (Customer, Order, Product, Payment)
   - [Workflows](architecture/flows/) — How the system processes requests
   - [Decisions](architecture/decisions/) — Architecture Decision Records (ADRs)
-
-- **[Requirements](requirements.md)** — Functional and non-functional requirements
-
-- **[User Stories](user-stories/)** — Feature backlog and acceptance criteria
+  - [Requirements](requirements.md) — Functional and non-functional requirements
+  - [User Stories](user-stories/) — Feature backlog and acceptance criteria
 
 ## 📖 How to Use This Documentation
 
 This documentation is **not meant to be read linearly**. Instead:
 
 1. **Start with [Architecture Overview](architecture/)** for the big picture
-2. **Dive into specific [Domain Model](architecture/domain/)** pages you're interested in
-3. **Navigate [Workflows](architecture/flows/)** to understand how data flows through the system
-4. **Check [User Stories](user-stories/)** for feature requirements
-5. **Use cross-links** within each page to explore related concepts
+2. **Understand system [Requirements](requirements.md)** and constraints
+3. **Dive into specific [Domain Models](architecture/domain/)** you're interested in
+4. **Navigate [Workflows](architecture/flows/)** to understand how data flows through the system
+5. **Review [User Stories](user-stories/)** for feature requirements and acceptance criteria
+6. **Explore [Architecture Decisions](architecture/decisions/)** to understand the "why" behind design choices
+7. **Use cross-links** within each page to explore related concepts
 
 ## 🎯 Key Principles
 
@@ -48,14 +49,17 @@ Our system consists of:
 - Review [Architecture Overview](architecture/) to understand the system design
 - Check [Domain Model](architecture/domain/) for entity details
 - Follow [Workflows](architecture/flows/) to understand request processing
+- Implement features aligned with [User Stories](user-stories/)
 
 ### For Product Managers
-- Start with [User Stories](user-stories/) to see features and acceptance criteria
-- Review [Requirements](requirements.md) for functional and non-functional requirements
+- Start with [Requirements](requirements.md) for functional and non-functional requirements
+- Review [User Stories](user-stories/) to see features and acceptance criteria
+- Check [Architecture Overview](architecture/) to understand technical constraints
 
 ### For Architects
 - Explore [Architecture Decisions](architecture/decisions/) for key design choices
-- Review entity relationships in [Architecture Overview](architecture/)
+- Review [Requirements](requirements.md) for non-functional requirements and constraints
+- Check entity relationships in [Domain Model](architecture/domain/)
 
 ## 🤝 Contributing to Documentation
 
@@ -81,15 +85,31 @@ git commit -m "feat: add wishlist feature with documentation"
 ```
 docs/
 ├── README.md (this file)
-├── requirements.md
-├── architecture/
-│   ├── README.md (big picture)
-│   ├── domain/ (entities)
-│   ├── flows/ (workflows)
-│   └── decisions/ (ADRs)
-└── user-stories/
-    └── (feature definitions)
+└── 🏗️ Architecture Documentation/
+    ├── architecture/
+    │   ├── README.md (big picture)
+    │   ├── domain/ (entities)
+    │   ├── flows/ (workflows)
+    │   └── decisions/ (ADRs)
+    ├── requirements.md (functional & non-functional)
+    └── user-stories/ (feature definitions & acceptance criteria)
 ```
+
+**All three components are part of the Architecture Documentation index:**
+- `architecture/` → How the system is structured (technical design)
+- `requirements.md` → What the system must do (business & quality attributes)
+- `user-stories/` → What users can do (feature backlog)
+
+---
+
+## 🔗 Quick Links
+
+- **[Architecture Overview](architecture/)** — System design at a glance
+- **[Requirements](requirements.md)** — What the system must do
+- **[User Stories](user-stories/)** — User-facing features
+- **[Domain Model](architecture/domain/)** — Core entities
+- **[Workflows](architecture/flows/)** — How data flows
+- **[Decisions](architecture/decisions/)** — Architecture Decision Records
 
 ---
 

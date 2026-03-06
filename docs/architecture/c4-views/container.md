@@ -1,7 +1,7 @@
 # Container View
 
 **Level:** C4 Model - Level 2 (System Decomposition)
-**Source:** [Structurizr DSL](./structurizr-dsl/container.dsl)
+**Source:** [Structurizr DSL](structurizr-dsl/container.dsl)
 
 ## Overview
 
@@ -9,7 +9,7 @@ The **E-Commerce Container View** is the second level of the C4 model that zooms
 
 ## Architecture Diagram
 
-![Container View](./images/container.svg)
+![Container View](images/container.svg)
 
 This diagram illustrates the complete container architecture, showing:
 - The **Web Application** as the client interface
@@ -46,7 +46,7 @@ The E-Commerce Platform follows a **microservices architecture** with clear sepa
   - SQL with Customer Database
   - Redis caching for frequently accessed profiles
   - AMQP events via Message Broker
-- **🔗 Deep Dive:** See [Customer Service Component View](./order-service-component.md) for internal architecture
+- **🔗 Deep Dive:** See [Customer Service Component View](order-service-component.md) for internal architecture
 
 **Order Service** 📦
 - **Technology:** Node.js
@@ -57,7 +57,7 @@ The E-Commerce Platform follows a **microservices architecture** with clear sepa
   - Redis caching for active orders
   - AMQP events via Message Broker
   - REST calls to Customer Service and Product Service
-- **🔗 Deep Dive:** See [Order Service Component View](./order-service-component.md) for internal architecture
+- **🔗 Deep Dive:** See [Order Service Component View](order-service-component.md) for internal architecture
 
 **Product Service** 🏷️
 - **Technology:** Node.js
@@ -76,7 +76,7 @@ The E-Commerce Platform follows a **microservices architecture** with clear sepa
   - SQL with Payment Database
   - AMQP events via Message Broker
   - HTTPS/API calls to external Payment Gateway (Stripe/PayPal)
-- **🔗 Deep Dive:** See [Payment Service Component View](./payment-service-component.md) for internal architecture
+- **🔗 Deep Dive:** See [Payment Service Component View](payment-service-component.md) for internal architecture
 
 ### 3️⃣ Infrastructure & Support Services
 
@@ -187,9 +187,9 @@ The E-Commerce Platform follows a **microservices architecture** with clear sepa
 
 ## Related Documentation
 
-- **[System Context](./system-context.md)** — High-level system boundaries and external actors
-- **[Order Service Component](./order-service-component.md)** — Detailed Order Service architecture
-- **[Payment Service Component](./payment-service-component.md)** — Detailed Payment Service architecture
+- **[System Context](system-context.md)** — High-level system boundaries and external actors
+- **[Order Service Component](order-service-component.md)** — Detailed Order Service architecture
+- **[Payment Service Component](payment-service-component.md)** — Detailed Payment Service architecture
 - **[Architecture Decision Records](../adr/README.md)** — Key architectural decisions
 - **[Domain Models](../models/domain/README.md)** — Entity definitions and relationships
 - **[System Flows](../models/flows/README.md)** — Business process workflows

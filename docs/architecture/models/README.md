@@ -19,13 +19,13 @@ Domain models represent the core entities and their business logic. Each model d
 
 | Model | Description |
 |-------|-------------|
-| [Customer](./domain/customer.md) | User accounts that place orders and manage payment methods |
-| [Order](./domain/order.md) | Purchase orders with items, status tracking, and payment information |
-| [Order Item](./domain/order-item.md) | Individual line items within an order |
-| [Payment](./domain/payment.md) | Payment transactions and method management |
-| [Product](./domain/product.md) | Inventory products with pricing and stock management |
+| [Customer](domain/customer.md) | User accounts that place orders and manage payment methods |
+| [Order](domain/order.md) | Purchase orders with items, status tracking, and payment information |
+| [Order Item](domain/order-item.md) | Individual line items within an order |
+| [Payment](domain/payment.md) | Payment transactions and method management |
+| [Product](domain/product.md) | Inventory products with pricing and stock management |
 
-**[👉 Full Domain Models Documentation](./domain/README.md)**
+**[👉 Full Domain Models Documentation](domain/README.md)**
 
 ---
 
@@ -37,11 +37,11 @@ Business flows describe how entities interact across services to complete import
 
 | Flow | Description |
 |------|-------------|
-| [Create Order](./flows/create-order.md) | Process for customers to place new orders with inventory and payment validation |
-| [Payment Processing](./flows/payment-processing.md) | Payment transaction handling and status updates |
-| [Inventory Management](./flows/inventory-management.md) | Stock tracking and allocation across orders |
+| [Create Order](flows/create-order.md) | Process for customers to place new orders with inventory and payment validation |
+| [Payment Processing](flows/payment-processing.md) | Payment transaction handling and status updates |
+| [Inventory Management](flows/inventory-management.md) | Stock tracking and allocation across orders |
 
-**[👉 Full Business Flows Documentation](./flows/README.md)**
+**[👉 Full Business Flows Documentation](flows/README.md)**
 
 ---
 

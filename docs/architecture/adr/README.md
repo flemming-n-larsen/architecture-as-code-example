@@ -2,7 +2,7 @@
 
 An Architecture Decision Record (ADR) is a document that captures an important architectural decision made along with its context and consequences.
 
-This directory contains the ADRs for the e-commerce system architecture, organized chronologically. Each ADR follows the MADR (Markdown Architecture Decision Records) format. See the MADR specification: https://adr.github.io/madr/
+This directory contains the ADRs for the e-commerce system architecture, organized chronologically. Each ADR follows the [MADR](https://adr.github.io/madr/) (Markdown Architecture Decision Records) specification.
 
 ---
 
@@ -10,15 +10,15 @@ This directory contains the ADRs for the e-commerce system architecture, organiz
 
 | Status | ID | Title | Date |
 |--------|----|----|------|
-| ✅ Accepted | [0001](./0001-use-uuid-primary-keys.md) | Use UUIDs for Primary Keys | 2026-01-12 |
-| 🔄 Pending | [0002](./0002-microservices-architecture.md) | Microservices Architecture | - |
-| 🔄 Pending | [0003](./0003-event-driven-communication.md) | Event-Driven Communication | - |
+| ✅ Accepted | [0001](0001-use-uuid-primary-keys.md) | Use UUIDs for Primary Keys | 2026-01-12 |
+| 🔄 Pending | [0002](0002-microservices-architecture.md) | Microservices Architecture | - |
+| 🔄 Pending | [0003](0003-event-driven-communication.md) | Event-Driven Communication | - |
 
 ---
 
 ## Quick Reference
 
-### [ADR-0001: Use UUIDs for Primary Keys](./0001-use-uuid-primary-keys.md)
+### [ADR-0001: Use UUIDs for Primary Keys](0001-use-uuid-primary-keys.md)
 **Status:** Accepted (2026-01-12)
 
 Establishes UUIDs (version 4) as the primary key strategy for all database tables to support distributed architecture, horizontal scaling, multi-region deployment, and data import/export safely.
@@ -31,7 +31,7 @@ Establishes UUIDs (version 4) as the primary key strategy for all database table
 
 ---
 
-### [ADR-0002: Microservices Architecture](./0002-microservices-architecture.md)
+### [ADR-0002: Microservices Architecture](0002-microservices-architecture.md)
 **Status:** Pending
 
 Defines the microservices architecture pattern for the e-commerce system.
@@ -40,7 +40,7 @@ Defines the microservices architecture pattern for the e-commerce system.
 
 ---
 
-### [ADR-0003: Event-Driven Communication](./0003-event-driven-communication.md)
+### [ADR-0003: Event-Driven Communication](0003-event-driven-communication.md)
 **Status:** Pending
 
 Specifies the event-driven communication mechanism between microservices.

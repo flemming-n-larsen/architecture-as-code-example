@@ -1,7 +1,7 @@
 # Payment Service Component View
 
 **Level:** C4 Model - Level 3 (Component Decomposition)
-**Source:** [Structurizr DSL](./structurizr-dsl/payment-service-component.dsl)
+**Source:** [Structurizr DSL](structurizr-dsl/payment-service-component.dsl)
 
 ## Overview
 
@@ -9,7 +9,7 @@ The **Payment Service Component View** is the third level of the C4 model that z
 
 ## Architecture Diagram
 
-![Payment Service Component View](./images/payment-service-component.svg)
+![Payment Service Component View](images/payment-service-component.svg)
 
 This diagram illustrates the internal component architecture, showing:
 - **API & Request Handling** layer for HTTP endpoints
@@ -324,9 +324,9 @@ graph TD
 
 ## Related Documentation
 
-- **[Container View](./container.md)** — Payment Service within container architecture
-- **[System Context](./system-context.md)** — High-level system context
-- **[Order Service Component](./order-service-component.md)** — Related Order Service architecture
+- **[Container View](container.md)** — Payment Service within container architecture
+- **[System Context](system-context.md)** — High-level system context
+- **[Order Service Component](order-service-component.md)** — Related Order Service architecture
 - **[Architecture Decision Records](../adr/README.md)** — Key architectural decisions
 - **[Payment Domain Model](../models/domain/payment.md)** — Payment entity definition
 - **[Payment Processing Flow](../models/flows/payment-processing.md)** — Business process workflow

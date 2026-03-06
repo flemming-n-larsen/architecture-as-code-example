@@ -9,7 +9,7 @@ An example demonstrating how to structure and maintain architecture documentatio
 This approach combines Architecture Decision Records (ADRs), C4 diagrams, and domain models—all as plain text,
 version-controlled, and AI-readable.
 
-> **📖 Full Documentation:** See the [Architecture Hub](./architecture/README.md) for a complete overview of all architectural artifacts.
+> **📖 Full Documentation:** See the [Architecture Hub](docs/architecture/README.md) for a complete overview of all architectural artifacts.
 
 ---
 
@@ -63,9 +63,9 @@ levels, and domain models explain *how* entities relate and workflows execute.
 
 | Category | Link | Description |
 |:---------|:-----|:------------|
-| **ADRs** | [architecture/adr/](./architecture/adr/) | Architecture Decision Records (MADR format). See `architecture/adr/README.md` for how to propose and review ADRs. |
-| **C4 Views** | [architecture/c4-views/](./architecture/c4-views/) | System diagrams at multiple zoom levels |
-| **Domain Models** | [architecture/models/](./architecture/models/) | Entity and workflow documentation |
+| **ADRs** | [architecture/adr/](docs/architecture/adr/) | Architecture Decision Records (MADR format). See `architecture/adr/README.md` for how to propose and review ADRs. |
+| **C4 Views** | [architecture/c4-views/](docs/architecture/c4-views/) | System diagrams at multiple zoom levels |
+| **Domain Models** | [architecture/models/](docs/architecture/models/) | Entity and workflow documentation |
 | **Specifications** | [openspec/specs/](./openspec/specs/) | Detailed behavior specifications |
 | **User Stories** | [docs/user-stories/](./docs/user-stories/) | Feature backlog |
 | **AI Guidelines** | [AGENTS.md](./AGENTS.md) | Guidelines for AI agents |
@@ -152,12 +152,12 @@ graph TB
 
 ### 1. Architecture Decision Records (ADRs) — The "Why"
 
-**[👉 architecture/adr/](./architecture/adr/)**
+**[👉 architecture/adr/](docs/architecture/adr/)**
 
 ADRs capture the context, alternatives, and rationale behind architectural decisions. Six months from now, when someone
 asks "Why did we choose UUIDs instead of auto-increment IDs?", the answer is in an ADR—not lost in Slack.
 
-**Example:** [ADR-0001: Use UUID Primary Keys](./architecture/adr/0001-use-uuid-primary-keys.md)
+**Example:** [ADR-0001: Use UUID Primary Keys](docs/architecture/adr/0001-use-uuid-primary-keys.md)
 
 Each ADR includes:
 
@@ -173,7 +173,7 @@ Each ADR includes:
 
 ### 2. C4 Views — The "What"
 
-**[👉 architecture/c4-views/](./architecture/c4-views/)**
+**[👉 architecture/c4-views/](docs/architecture/c4-views/)**
 
 C4 diagrams show the system structure at multiple zoom levels, like a map you can zoom in and out of:
 
@@ -184,9 +184,9 @@ C4 diagrams show the system structure at multiple zoom levels, like a map you ca
 
 **Example Views:**
 
-- [System Context](./architecture/c4-views/system-context.md) — E-commerce platform overview
-- [Container View](./architecture/c4-views/container.md) — Microservices and databases
-- [Order Service Components](./architecture/c4-views/order-service-component.md) — Internal service structure
+- [System Context](docs/architecture/c4-views/system-context.md) — E-commerce platform overview
+- [Container View](docs/architecture/c4-views/container.md) — Microservices and databases
+- [Order Service Components](docs/architecture/c4-views/order-service-component.md) — Internal service structure
 
 **Format:** We use [Structurizr DSL](https://structurizr.com/) for C4 diagrams because it's plain text, has C4-native
 semantics, and generates professional-looking SVGs.
@@ -195,22 +195,22 @@ semantics, and generates professional-looking SVGs.
 
 ### 3. Domain Models & Flows — The "How"
 
-**[👉 architecture/models/](./architecture/models/)**
+**[👉 architecture/models/](docs/architecture/models/)**
 
 Domain models explain entity relationships and how business processes are executed across the system:
 
 **Domain Entities** (with Mermaid diagrams):
 
-- [Customer](./architecture/models/domain/customer.md)
-- [Order](./architecture/models/domain/order.md)
-- [Product](./architecture/models/domain/product.md)
-- [Payment](./architecture/models/domain/payment.md)
+- [Customer](docs/architecture/models/domain/customer.md)
+- [Order](docs/architecture/models/domain/order.md)
+- [Product](docs/architecture/models/domain/product.md)
+- [Payment](docs/architecture/models/domain/payment.md)
 
 **Business Flows** (sequence diagrams):
 
-- [Create Order Flow](./architecture/models/flows/create-order.md)
-- [Payment Processing](./architecture/models/flows/payment-processing.md)
-- [Inventory Management](./architecture/models/flows/inventory-management.md)
+- [Create Order Flow](docs/architecture/models/flows/create-order.md)
+- [Payment Processing](docs/architecture/models/flows/payment-processing.md)
+- [Inventory Management](docs/architecture/models/flows/inventory-management.md)
 
 **Format:** We use [Mermaid](https://mermaid.js.org/) for domain models and sequence diagrams because it embeds directly
 in Markdown and renders everywhere (GitHub, IDEs, documentation sites).
@@ -221,7 +221,7 @@ in Markdown and renders everywhere (GitHub, IDEs, documentation sites).
 
 The architecture documentation is organized for easy navigation:
 
-- **[Architecture Hub](architecture/README.md)** — Start here for the complete architecture overview
+- **[Architecture Hub](docs/architecture/README.md)** — Start here for the complete architecture overview
 - **[Requirements](docs/requirements.md)** — System requirements (functional and non-functional)
 - **[User Stories](docs/user-stories/README.md)** — Feature backlog with acceptance criteria
 
@@ -229,20 +229,20 @@ The architecture documentation is organized for easy navigation:
 
 **New to the project?**
 
-1. Read the [System Context](./architecture/c4-views/system-context.md) for the big picture
-2. Explore the [Container View](./architecture/c4-views/container.md) to see microservices
-3. Review [ADR-0002: Microservices Architecture](./architecture/adr/0002-microservices-architecture.md) to understand
+1. Read the [System Context](docs/architecture/c4-views/system-context.md) for the big picture
+2. Explore the [Container View](docs/architecture/c4-views/container.md) to see microservices
+3. Review [ADR-0002: Microservices Architecture](docs/architecture/adr/0002-microservices-architecture.md) to understand
    why
 
 **Want to understand a specific feature?**
 
-1. Check the [Create Order Flow](./architecture/models/flows/create-order.md) sequence diagram
-2. Review the [Order](./architecture/models/domain/order.md) domain model
+1. Check the [Create Order Flow](docs/architecture/models/flows/create-order.md) sequence diagram
+2. Review the [Order](docs/architecture/models/domain/order.md) domain model
 3. See the implementation rationale in related ADRs
 
 **Looking to understand past decisions?**
 
-- Browse all ADRs in the [ADR index](./architecture/adr/README.md)
+- Browse all ADRs in the [ADR index](docs/architecture/adr/README.md)
 
 ---
 
@@ -382,8 +382,8 @@ graph LR
 
 **Example Flow:**
 
-1. **Decision:** [ADR-0003: Event-Driven Communication](./architecture/adr/0003-event-driven-communication.md)
-2. **Structure:** [Container View](./architecture/c4-views/container.md) shows the message broker
+1. **Decision:** [ADR-0003: Event-Driven Communication](docs/architecture/adr/0003-event-driven-communication.md)
+2. **Structure:** [Container View](docs/architecture/c4-views/container.md) shows the message broker
 3. **Specification:** OpenSpec change proposal defines event schemas and contracts
 4. **Implementation:** Code follows the specification
 5. **Validation:** Tests verify code matches specification
@@ -455,7 +455,7 @@ best when it understands both structure (from architecture) and behavior (from s
 
 ### ADR Example
 
-From [architecture/adr/0001-use-uuid-primary-keys.md](./architecture/adr/0001-use-uuid-primary-keys.md):
+From [architecture/adr/0001-use-uuid-primary-keys.md](docs/architecture/adr/0001-use-uuid-primary-keys.md):
 
 ```markdown
 # Use UUIDs for Primary Keys
@@ -493,11 +493,11 @@ broad ecosystem support.
 
 ### C4 View Example
 
-From [architecture/c4-views/container.md](./architecture/c4-views/container.md):
+From [architecture/c4-views/container.md](docs/architecture/c4-views/container.md):
 
 The Container view shows microservices, databases, and communication patterns:
 
-![Container View](./architecture/c4-views/images/container.svg)
+![Container View](docs/architecture/c4-views/images/container.svg)
 
 **Key elements:**
 
@@ -513,7 +513,7 @@ The Container view shows microservices, databases, and communication patterns:
 
 ### Domain Model Example
 
-From [architecture/models/domain/order.md](./architecture/models/domain/order.md):
+From [architecture/models/domain/order.md](docs/architecture/models/domain/order.md):
 
 ```mermaid
 classDiagram
@@ -544,7 +544,7 @@ Each domain model includes:
 
 ### Workflow Example
 
-From [architecture/models/flows/create-order.md](./architecture/models/flows/create-order.md):
+From [architecture/models/flows/create-order.md](docs/architecture/models/flows/create-order.md):
 
 ```mermaid
 sequenceDiagram
@@ -581,8 +581,8 @@ These tools are optional—you only need them if you want to generate or export 
 
 ### For Learning
 
-1. **Start with the architecture hub:** Read [architecture/README.md](./architecture/README.md) for the complete overview
-2. **Explore the examples:** Browse [architecture/](./architecture/) to see the three pillars in action
+1. **Start with the architecture hub:** Read [architecture/README.md](docs/architecture/README.md) for the complete overview
+2. **Explore the examples:** Browse [architecture/](docs/architecture/) to see the three pillars in action
 3. **Study the cross-references:** See how ADRs, C4 views, and models link to each other
 4. **Notice the patterns:** Observe modular structure, navigation, and how diagrams embed in Markdown
 
@@ -801,8 +801,8 @@ MIT License — Free to use and adapt for any purpose. See [LICENSE](./LICENSE) 
 
 **Ready to explore?**
 
-1. 🏗️ **Start:** [architecture/README.md](./architecture/README.md) — Architecture hub overview
-2. 🔍 **Explore:** [architecture/](./architecture/) — See the three pillars in action
+1. 🏗️ **Start:** [architecture/README.md](docs/architecture/README.md) — Architecture hub overview
+2. 🔍 **Explore:** [architecture/](docs/architecture/) — See the three pillars in action
 3. 📖 **Study:** Pick an ADR, follow its links to C4 views and domain models
 4. 💡 **Adapt:** Fork this repo and customize for your project
 

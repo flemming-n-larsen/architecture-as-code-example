@@ -127,8 +127,8 @@ stateDiagram-v2
 
 ![State diagram showing Order lifecycle](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/screenshots/order-state-diagram.png?raw=true)
 
-**Related Entities:** [Customer](../../architecture/models/domain/customer.md) · [OrderItem](../../architecture/models/domain/order-item.md) · [Payment](../../architecture/models/domain/payment.md)  
-**Workflows:** [Create Order](../../architecture/models/flows/create-order.md) · [Payment Processing](../../architecture/models/flows/payment-processing.md)
+**Related Entities:** [Customer](../../docs/architecture/models/domain/customer.md) · [OrderItem](../../docs/architecture/models/domain/order-item.md) · [Payment](../../docs/architecture/models/domain/payment.md)  
+**Workflows:** [Create Order](../../docs/architecture/models/flows/create-order.md) · [Payment Processing](../../docs/architecture/models/flows/payment-processing.md)
 
 Every file links to related concepts. The `Order` entity links to `Customer`, `OrderItem`, `Payment`, and the `Create Order` flow. Navigation is hyperlinked, so you explore based on what you need.
 

@@ -1,7 +1,7 @@
 # System Context
 
 **Level:** C4 Model - Level 1 (System Context)
-**Source:** [Structurizr DSL](./structurizr-dsl/system-context.dsl)
+**Source:** [Structurizr DSL](structurizr-dsl/system-context.dsl)
 
 ## Overview
 
@@ -9,7 +9,7 @@ The **E-Commerce System Context** diagram illustrates the high-level architectur
 
 ## Architecture Diagram
 
-![System Context](./images/system-context.svg)
+![System Context](images/system-context.svg)
 
 This diagram shows the E-Commerce Platform at the center with:
 - **External Actors** (Customers, Administrators) using the system
@@ -164,16 +164,16 @@ The **E-Commerce Platform** 🛒 is the central software system that serves as t
 ## Next Steps in Architecture
 
 **Ready to dive deeper?**
-- **[👉 Container View](./container.md)** — Explore the internal structure and microservices
-- **[👉 Order Service Component](./order-service-component.md)** — See how orders are processed
-- **[👉 Payment Service Component](./payment-service-component.md)** — Understand payment workflows
+- **[👉 Container View](container.md)** — Explore the internal structure and microservices
+- **[👉 Order Service Component](order-service-component.md)** — See how orders are processed
+- **[👉 Payment Service Component](payment-service-component.md)** — Understand payment workflows
 
 ---
 
 ## Related Documentation
 
-- **[Container Architecture](./container.md)** — Detailed view of internal system components and microservices
+- **[Container Architecture](container.md)** — Detailed view of internal system components and microservices
 - **[Architecture Decision Records](../adr/README.md)** — Key architectural decisions and rationale
 - **[Domain Models](../models/domain/README.md)** — Entity definitions and relationships
 - **[System Flows](../models/flows/README.md)** — Business process workflows
-- **[Requirements](../../docs/requirements.md)** — Functional and non-functional requirements
+- **[Requirements](../../requirements.md)** — Functional and non-functional requirements

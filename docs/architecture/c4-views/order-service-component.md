@@ -1,7 +1,7 @@
 # Order Service Component View
 
 **Level:** C4 Model - Level 3 (Component Decomposition)
-**Source:** [Structurizr DSL](./structurizr-dsl/order-service-component.dsl)
+**Source:** [Structurizr DSL](structurizr-dsl/order-service-component.dsl)
 
 ## Overview
 
@@ -9,7 +9,7 @@ The **Order Service Component View** is the third level of the C4 model that zoo
 
 ## Architecture Diagram
 
-![Order Service Component View](./images/order-service-component.svg)
+![Order Service Component View](images/order-service-component.svg)
 
 This diagram illustrates the internal component architecture, showing:
 - **API & Request Handling** layer for HTTP endpoints
@@ -242,9 +242,9 @@ graph TD
 
 ## Related Documentation
 
-- **[Container View](./container.md)** — Order Service within container architecture
-- **[System Context](./system-context.md)** — High-level system context
-- **[Payment Service Component](./payment-service-component.md)** — Related Payment Service architecture
+- **[Container View](container.md)** — Order Service within container architecture
+- **[System Context](system-context.md)** — High-level system context
+- **[Payment Service Component](payment-service-component.md)** — Related Payment Service architecture
 - **[Architecture Decision Records](../adr/README.md)** — Key architectural decisions
 - **[Order Domain Model](../models/domain/order.md)** — Order entity definition
 - **[Create Order Flow](../models/flows/create-order.md)** — Business process workflow
