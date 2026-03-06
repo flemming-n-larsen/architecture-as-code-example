@@ -23,11 +23,11 @@ This directory contains specifications for the e-commerce platform using the **O
 
 Active specifications that define the current state of the system. These are the source of truth for system behavior.
 
-| Specification | Domain | Description |
-|:--------------|:-------|:------------|
-| [customer/spec.md](specs/customer/spec.md) | Customer Management | Customer registration, authentication, profile management, account status |
-| [order/spec.md](specs/order/spec.md) | Order Management | Order lifecycle, state machine (pending → confirmed → shipped → delivered), cancellation rules |
-| [payment/spec.md](specs/payment/spec.md) | Payment Processing | Payment authorization, retry logic, refund processing |
+| Specification                              | Domain              | Description                                                                                    |
+|:-------------------------------------------|:--------------------|:-----------------------------------------------------------------------------------------------|
+| [customer/spec.md](specs/customer/spec.md) | Customer Management | Customer registration, authentication, profile management, account status                      |
+| [order/spec.md](specs/order/spec.md)       | Order Management    | Order lifecycle, state machine (pending → confirmed → shipped → delivered), cancellation rules |
+| [payment/spec.md](specs/payment/spec.md)   | Payment Processing  | Payment authorization, retry logic, refund processing                                          |
 
 ### 📁 `/changes` - Change Proposals
 
@@ -35,9 +35,9 @@ Proposed and completed changes to the system. Active proposals represent work in
 
 #### Active Proposals
 
-| Proposal | Status | Description |
-|:---------|:-------|:------------|
-| [loyalty-points/](changes/loyalty-points/) | 🚧 Active | Customer loyalty points system - earn points on orders, redeem for discounts |
+| Proposal                                              | Status    | Description                                                                  |
+|:------------------------------------------------------|:----------|:-----------------------------------------------------------------------------|
+| [loyalty-points/](changes/loyalty-points/proposal.md) | 🚧 Active | Customer loyalty points system - earn points on orders, redeem for discounts |
 
 **Contents:**
 - [proposal.md](changes/loyalty-points/proposal.md) - Detailed change proposal
@@ -46,9 +46,9 @@ Proposed and completed changes to the system. Active proposals represent work in
 
 #### Archived Proposals
 
-| Proposal | Completed | Description |
-|:---------|:----------|:------------|
-| [user-registration/](changes/archived/user-registration/) | ✅ Dec 2025 | Enhanced registration with email verification, password validation, spam prevention |
+| Proposal                                                             | Completed  | Description                                                                         |
+|:---------------------------------------------------------------------|:-----------|:------------------------------------------------------------------------------------|
+| [user-registration/](changes/archived/user-registration/proposal.md) | ✅ Dec 2025 | Enhanced registration with email verification, password validation, spam prevention |
 
 ## How to Use
 
@@ -77,8 +77,8 @@ When implementing features:
 
 ## Related Documentation
 
-- **[AGENTS.md](../AGENTS.md)** - Guidelines for AI agents working with this codebase
-- **[Architecture](../docs/architecture/)** - System architecture, ADRs, C4 diagrams
-- **[Domain Models](../docs/architecture/models/)** - Entity definitions and relationships
-- **[User Stories](../docs/user-stories/)** - User-facing feature descriptions
+- **[AGENTS.md](/AGENTS.md)** - Guidelines for AI agents working with this codebase
+- **[Architecture](/docs/architecture/README.md)** - System architecture, ADRs, C4 diagrams
+- **[Domain Models](/docs/architecture/models/README.md)** - Entity definitions and relationships
+- **[User Stories](/docs/user-stories/README.md)** - User-facing feature descriptions
 
