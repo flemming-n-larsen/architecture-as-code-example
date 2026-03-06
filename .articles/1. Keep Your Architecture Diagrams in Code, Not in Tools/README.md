@@ -186,7 +186,7 @@ You might never go back to Confluence diagrams again.
 
 ## 📖 Next in Series
 
-→ **[Keep Your AI and Architecture-Design in Sync](../A2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)** (Part 2)
+→ **[Keep Your AI and Architecture-Design in Sync](../2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)** (Part 2)
 
 Read how to extend architecture-as-code with specifications to keep AI agents and design in sync.
 

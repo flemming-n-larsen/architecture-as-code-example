@@ -9,7 +9,7 @@
 ---
 
 **📖 Prerequisites:** This article builds directly on the concepts from the first article:
-[Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md).
+[Keep Your Architecture Diagrams in Code, Not in Tools](../1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md).
 If you haven't read it yet, start there first—it establishes the foundation of architecture-as-code that this article
 extends.
 
@@ -488,7 +488,7 @@ make this practice more critical—they can generate code much faster, so the co
 ## Getting Started
 
 0. **Read the prerequisite article first** - If you haven't already,
-   read [Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)
+   read [Keep Your Architecture Diagrams in Code, Not in Tools](../1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)
    to establish the `/docs` foundation
 1. **Pick an existing project** (brownfield approach - like most real work)
 2. **Create an `/openspec` folder** alongside your existing code
@@ -562,9 +562,9 @@ with AI and building maintainable systems with AI.
 
 ## 📖 Navigation
 
-← **[Previous: Keep Your Architecture Diagrams in Code, Not in Tools](../A1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)** (Part 1)
+← **[Previous: Keep Your Architecture Diagrams in Code, Not in Tools](../1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/README.md)** (Part 1)
 
-→ **[Next: Architecture as Code in Practice](../A3.%20Architecture%20as%20Code%20in%20Practice/README.md)** (Part 3)
+→ **[Next: Architecture as Code in Practice](../3.%20Architecture%20as%20Code%20in%20Practice/README.md)** (Part 3)
 
 ---
 
