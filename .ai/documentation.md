@@ -21,6 +21,14 @@ function calculateLoyaltyPoints(orderTotal: number): number {
 }
 ```
 
+## Directory README Files
+
+Every directory containing documentation must have a `README.md` file. Git hosting platforms (GitHub, GitLab, Bitbucket, etc.) automatically render the `README.md` as the directory's landing page when a user navigates to it — making it the primary entry point for anyone browsing the repository. Without it, a directory is just a list of files with no context.
+
+Each `README.md` should:
+- Describe the purpose and contents of the directory
+- Link to key files within it
+
 ## Specification References
 
 When implementing features from change proposals, include references:
