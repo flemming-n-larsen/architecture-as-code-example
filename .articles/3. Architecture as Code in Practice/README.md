@@ -666,7 +666,7 @@ That's the future of executable architecture. 🚀
 
 ← **[Previous: Keep Your AI and Architecture-Design in Sync](../2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)** (Part 2)
 
-This completes the Architecture as Code series. For more details, explore the companion repository below.
+→ **[Next: 📋 Think in Specs — The Modern Developer's Mindset](../4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)** (Part 4)
 
 ---
 
