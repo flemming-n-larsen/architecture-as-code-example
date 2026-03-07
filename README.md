@@ -7,7 +7,7 @@
 
 An example demonstrating how to develop software in the agentic AI age across three layers:
 **Architecture as Code** (AoC) · **Spec-Driven Development** (SDD) · **Agentic AI** implementation—all as plain text,
-version-controlled, and AI-readable.
+version-controlled, and AI-readable. AoC itself rests on four pillars: ADRs, C4 views, domain models, and IaC specs.
 
 > **📖 Full Documentation:** See the [Architecture Hub](docs/architecture/README.md) for a complete overview of all architectural artifacts.
 
@@ -143,7 +143,7 @@ AoC + SDD + Agentic AI form a closed loop — the mono-repo is the single source
 
 ```mermaid
 graph TD
-    AoC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · Flows"]
+    AoC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · IaC specs"]
     SDD["📋 Spec-Driven Development<br>Change proposals · Specs · Tasks"]
     AI["⚙️ Agentic AI<br>Implementation · Archiving"]
     Repo["📜 Mono-repo<br>Single source of truth"]
@@ -240,7 +240,7 @@ delta back into the specs. The workflow is deliberately front-loaded — design 
 
 | Component        | Purpose                                       | Examples                                           |
 |:-----------------|:----------------------------------------------|:---------------------------------------------------|
-| **Architecture** | System structure, decisions, and design       | ADRs, C4 diagrams, domain models                   |
+| **Architecture** | System structure, decisions, and design       | ADRs, C4 diagrams, domain models, IaC specs        |
 | **OpenSpec**     | Detailed behavior specs and change management | Change proposals, business rules, validation logic |
 
 - **`/openspec/specs/`** — Source-of-truth specifications per domain
@@ -333,6 +333,38 @@ sequenceDiagram
 
 ---
 
+### IaC Spec Example
+
+From [architecture/iac/networking.md](docs/architecture/iac/networking.md):
+
+```mermaid
+graph TD
+    Internet["Internet"]
+    subgraph Public["Public Subnet"]
+        GW["API Gateway"]
+    end
+    subgraph Private["Private Subnet"]
+        OS["Order Service"]
+        PY["Payment Service"]
+    end
+    subgraph Data["Isolated Data Subnet"]
+        ODB[("Order DB")]
+        MQ["RabbitMQ"]
+    end
+    Internet --> GW
+    GW --> OS
+    GW --> PY
+    OS --> ODB
+    OS --> MQ
+    PY --> MQ
+```
+
+Three network tiers — public (API Gateway), private (services), isolated data (databases + broker) — enforcing the
+microservices boundaries from ADR-0002 at the network layer. See also [IAM](docs/architecture/iac/iam.md) and
+[Environments](docs/architecture/iac/environments.md) specs.
+
+---
+
 ## 🛠️ Using This Repository
 
 ### Prerequisites (Optional)
@@ -350,7 +382,8 @@ sequenceDiagram
 2. Replace example ADRs with your real architectural decisions
 3. Update C4 DSL files with your actual system structure
 4. Customize domain models for your business entities
-5. Commit architecture updates in the same PR as implementation changes
+5. Add IaC specs for your networking, IAM, and environment guardrails
+6. Commit architecture updates in the same PR as implementation changes
 
 ---
 
@@ -405,6 +438,13 @@ Follow the SDD workflow — front-load the thinking, let the AI do the implement
 
 - **[Domain-Driven Design](https://www.domainlanguage.com/ddd/)** — Eric Evans' foundational work
 - **[Fitness Functions](https://www.thoughtworks.com/insights/articles/fitness-function-driven-development)** — Verifying architecture through automated checks
+
+### Infrastructure as Code
+
+- **[What is Infrastructure as Code? — Microsoft](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)** — Foundational overview of the IaC concept
+- **[Terraform](https://www.terraform.io/)** — Cloud-agnostic IaC tooling
+- **[Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview)** — Azure-native IaC language
+- **[Pulumi](https://www.pulumi.com/)** — IaC using general-purpose programming languages
 
 
 ---

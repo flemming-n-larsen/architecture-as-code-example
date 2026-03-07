@@ -11,11 +11,11 @@ govern it — and they belong in architectural documentation alongside ADRs, C4 
 
 ## 📚 IaC Spec Index
 
-| Spec                                  | Description                                              |
-|:--------------------------------------|:---------------------------------------------------------|
-| [Networking](./networking.md)         | VPC topology, subnets, and security-group rules          |
-| [IAM](./iam.md)                       | Per-service roles and least-privilege policies           |
-| [Environments](./environments.md)     | Dev / staging / prod definitions and promotion guardrails |
+| Spec                              | Description                                               |
+|:----------------------------------|:----------------------------------------------------------|
+| [Networking](./networking.md)     | VPC topology, subnets, and security-group rules           |
+| [IAM](./iam.md)                   | Per-service roles and least-privilege policies            |
+| [Environments](./environments.md) | Dev / staging / prod definitions and promotion guardrails |
 
 ---
 
