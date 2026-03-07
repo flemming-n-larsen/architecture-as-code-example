@@ -5,8 +5,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Markdown](https://img.shields.io/badge/Docs-Markdown-blue.svg)](https://www.markdownguide.org/)
 
-An example demonstrating how to structure and maintain architecture documentation **as code** in your repository.
-This approach combines Architecture Decision Records (ADRs), C4 diagrams, and domain models—all as plain text,
+An example demonstrating how to develop software in the agentic AI age across three layers:
+**Architecture as Code** (AoC) · **Spec-Driven Development** (SDD) · **Agentic AI** implementation—all as plain text,
 version-controlled, and AI-readable.
 
 > **📖 Full Documentation:** See the [Architecture Hub](docs/architecture/README.md) for a complete overview of all architectural artifacts.
@@ -17,11 +17,11 @@ version-controlled, and AI-readable.
 
 This repository accompanies this article series:
 
-| # | Article                                                                                                                                                    | Description                                                    |
-|:--|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------|
-| 1 | [Keep Your Architecture Diagrams in Code, Not in Tools](.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code%2C%20Not%20in%20Tools/README.md) | Why and how to store diagrams as plain text in your repo       |
-| 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)                         | Spec-driven development so AI agents respect your architecture |
-| 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)                                                     | ADRs, C4 diagrams, and domain models working together          |
+| # | Article                                                                                                                                                   | Description                                                         |
+|:--|:----------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------|
+| 1 | [Keep Your Architecture Diagrams in Code, Not in Tools](.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code%2C%20Not%20in%20Tools/README.md) | Why and how to store diagrams as plain text in your repo            |
+| 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)                         | Spec-driven development so AI agents respect your architecture      |
+| 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)                                                     | ADRs, C4 diagrams, and domain models working together               |
 | 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)                  | The mindset that ties architecture, design, and agentic AI together |
 
 ---
@@ -30,7 +30,7 @@ This repository accompanies this article series:
 
 - [🎯 What This Repository Demonstrates](#-what-this-repository-demonstrates)
 - [📂 Repository Structure](#-repository-structure)
-- [🏗️ The Three-Pillar Approach](#-the-three-pillar-approach)
+- [🏗️ The Complete Workflow](#-the-complete-workflow)
 - [📚 Documentation Structure](#-documentation-structure)
 - [🔄 OpenSpec Integration](#-beyond-architecture-openspec-integration)
 - [📖 Real Examples](#-real-examples-from-this-repository)
@@ -44,10 +44,18 @@ This repository accompanies this article series:
 
 ## 🎯 What This Repository Demonstrates
 
-A complete working example of **executable architecture**—documentation that lives with your code, guides
-implementation, and stays synchronized as your system evolves.
+Software development still moves through three layers — AI changes *who* does the implementation, not the layers themselves:
 
-### The Three Pillars
+| Layer | Practice | What lives here |
+|:------|:---------|:----------------|
+| **🏛️ Architecture** | Architecture as Code (AoC) | ADRs, C4 diagrams, domain models, flows |
+| **📋 Design** | [Spec-Driven Development (SDD)](https://en.wikipedia.org/wiki/Spec-driven_development) | Change proposals, specs, tasks |
+| **⚙️ Implementation** | Agentic AI | Code — written by the AI from the spec |
+
+> **Key insight:** AI is excellent at implementation. Humans are still required for architecture and design.
+> See the [article series](#-article-series) for the full mindset behind this approach.
+
+### 🏗️ The Three Pillars of Architecture as Code
 
 ```
 architecture/
@@ -119,23 +127,22 @@ explain *how* entities relate and workflows execute.
 
 ---
 
-## 🏗️ The Three-Pillar Approach
+## 🏗️ The Complete Workflow
+
+AoC + SDD + Agentic AI form a closed loop — the mono-repo is the single source of truth:
 
 ```mermaid
-graph TB
-    subgraph Architecture["🏗️ Architecture Documentation"]
-        ADRs["<b>ADRs</b><br/>WHY<br/>━━━━<br/>Decisions<br/>Context<br/>Trade-offs"]
-        C4Views["<b>C4 Views</b><br/>WHAT<br/>━━━━<br/>System Context<br/>Container<br/>Component"]
-        Models["<b>Domain Models</b><br/>HOW<br/>━━━━<br/>Entities<br/>Relationships<br/>Workflows"]
-    end
+graph TD
+    AoC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · Flows"]
+    SDD["📋 Spec-Driven Development<br>Change proposals · Specs · Tasks"]
+    AI["⚙️ Agentic AI<br>Implementation · Archiving"]
+    Repo["📜 Mono-repo<br>Single source of truth"]
 
-    ADRs -.->|links to| C4Views
-    C4Views -.->|implements| Models
-    Models -.->|explained by| ADRs
-
-    style ADRs fill:#e1f5ff,stroke:#01579b,stroke-width:2px,color:#000
-    style C4Views fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,color:#000
-    style Models fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px,color:#000
+    Repo --> AoC
+    Repo --> SDD
+    AoC -->|"Context & constraints"| SDD
+    SDD -->|"Intent & tasks"| AI
+    AI -->|"Archived delta"| Repo
 ```
 
 ---
@@ -199,35 +206,21 @@ C4 diagrams show the system structure at multiple zoom levels:
 
 ## 🔄 Beyond Architecture: OpenSpec Integration
 
-This repository also demonstrates **OpenSpec**—a complementary approach for managing detailed specifications and change
-proposals with AI agents.
+**OpenSpec** complements AoC with [Spec-Driven Development](https://en.wikipedia.org/wiki/Spec-driven_development):
+write a change proposal before any code is written, let an AI implement task by task from the spec, then archive the
+delta back into the specs. The workflow is deliberately front-loaded — design issues surface when they are inexpensive to fix.
 
-| Component | Purpose | Examples |
-|:----------|:--------|:---------|
-| **Architecture** (this approach) | System structure, decisions, and design | ADRs, C4 diagrams, domain models |
-| **OpenSpec** (complementary) | Detailed behavior specifications and change management | API contracts, business rules, validation logic |
+| Component        | Purpose                                       | Examples                                           |
+|:-----------------|:----------------------------------------------|:---------------------------------------------------|
+| **Architecture** | System structure, decisions, and design       | ADRs, C4 diagrams, domain models                   |
+| **OpenSpec**     | Detailed behavior specs and change management | Change proposals, business rules, validation logic |
 
-```mermaid
-graph LR
-    ADR["ADR<br/>(Decision)"] -->|Documents why| C4["C4 View<br/>(Structure)"]
-    C4 -->|Shows how| OpenSpec["OpenSpec<br/>(Specification)"]
-    OpenSpec -->|Defines what| Code["Code<br/>(Implementation)"]
-    Code -->|Implements| Tests["Tests<br/>(Verification)"]
-    Tests -->|Validates against| OpenSpec
-    Tests -->|Feeds back to| ADR
-
-    style ADR fill:#e1f5ff,color:#000
-    style C4 fill:#f3e5f5,color:#000
-    style OpenSpec fill:#e8f5e9,color:#000
-    style Code fill:#fff3e0,color:#000
-    style Tests fill:#fce4ec,color:#000
-```
-
-- **Specifications (in `/openspec/specs`) — Current system behavior (source of truth)
-- **Change Proposals(in `/openspec/changes`) — Proposed changes with tasks and spec deltas
+- **`/openspec/specs/`** — Source-of-truth specifications per domain
+- **`/openspec/changes/`** — Active and archived change proposals (`proposal.md`, `tasks.md`, spec deltas)
 - **[AGENTS.md](./AGENTS.md)** — Guidelines for AI agents working with specs and code
 
-> For a deep dive into the AI + architecture sync workflow, see [Article 2](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md).
+> For the full SDD workflow (steps, prompts, and a worked example), see [Article 2](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md).
+> For the mindset behind combining AoC + SDD + Agentic AI, see [Article 4](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md).
 
 ---
 
@@ -316,10 +309,10 @@ sequenceDiagram
 
 ### Prerequisites (Optional)
 
-| Tool | Purpose | Installation |
-|:-----|:--------|:-------------|
-| [Structurizr CLI](https://github.com/structurizr/cli) | Generate C4 diagrams from DSL | `brew install structurizr-cli` or download from GitHub |
-| [Mermaid CLI](https://github.com/mermaid-js/mermaid-cli) | Export Mermaid diagrams to images | `npm install -g @mermaid-js/mermaid-cli` |
+| Tool                                                     | Purpose                           | Installation                                           |
+|:---------------------------------------------------------|:----------------------------------|:-------------------------------------------------------|
+| [Structurizr CLI](https://github.com/structurizr/cli)    | Generate C4 diagrams from DSL     | `brew install structurizr-cli` or download from GitHub |
+| [Mermaid CLI](https://github.com/mermaid-js/mermaid-cli) | Export Mermaid diagrams to images | `npm install -g @mermaid-js/mermaid-cli`               |
 
 > Most IDEs, GitHub, and GitLab render Mermaid diagrams natively—no CLI needed for viewing.
 
@@ -335,42 +328,14 @@ sequenceDiagram
 
 ## 📝 Making Changes
 
-When making architectural changes, follow this pattern:
+Follow the SDD workflow — front-load the thinking, let the AI do the implementation:
 
-**1. Document the Decision:**
+1. **Write a change proposal** (`proposal.md`, `tasks.md`) — with AI in plan mode
+2. **Review & refine** — human judgment, don't skip this
+3. **Implement task by task** — AI works from the spec
+4. **Archive & merge** — AI archives the spec delta, open the PR
 
-```bash
-cp architecture/adr/0001-use-uuid-primary-keys.md architecture/adr/0004-new-decision.md
-edit architecture/adr/0004-new-decision.md
-```
-
-**2. Update Structure Views:**
-
-```bash
-edit architecture/c4-views/structurizr-dsl/container.dsl
-structurizr-cli export -workspace container.dsl -format svg
-```
-
-**3. Update Domain Models:**
-
-```bash
-edit architecture/models/domain/order.md
-edit architecture/models/flows/create-order.md
-```
-
-**4. Commit Everything Together:**
-
-```bash
-git add architecture/ src/
-git commit -m "feat: add order cancellation workflow
-
-- ADR-0004: Document decision to support cancellations
-- Update container view with new CancellationService
-- Add cancellation flow sequence diagram
-- Implement OrderService.cancelOrder() method"
-```
-
-This keeps architecture and implementation synchronized and reviewable in the same PR.
+> For detailed steps, prompts, and a worked example, see [Article 2](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md).
 
 ---
 
@@ -378,12 +343,17 @@ This keeps architecture and implementation synchronized and reviewable in the sa
 
 ### Article Series
 
-| # | Article |
-|:--|:--------|
+| # | Article                                                                                                                                                   |
+|:--|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1 | [Keep Your Architecture Diagrams in Code, Not in Tools](.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code%2C%20Not%20in%20Tools/README.md) |
-| 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md) |
-| 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md) |
-| 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md) |
+| 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)                         |
+| 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)                                                     |
+| 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)                  |
+
+### OpenSpec & Spec-Driven Development
+
+- **[OpenSpec](https://openspec.dev/)** — Machine-readable specifications (used in this repo for detailed specs)
+- **[Spec-Driven Development — Wikipedia](https://en.wikipedia.org/wiki/Spec-driven_development)** — Overview of the SDD methodology
 
 ### Architecture Decision Records
 
@@ -408,9 +378,6 @@ This keeps architecture and implementation synchronized and reviewable in the sa
 - **[Domain-Driven Design](https://www.domainlanguage.com/ddd/)** — Eric Evans' foundational work
 - **[Fitness Functions](https://www.thoughtworks.com/insights/articles/fitness-function-driven-development)** — Verifying architecture through automated checks
 
-### OpenSpec
-
-- **[OpenSpec](https://openspec.dev/)** — Machine-readable specifications (used in this repo for detailed specs)
 
 ---
 
