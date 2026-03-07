@@ -37,7 +37,7 @@ No external tools. No expensive licenses. No sync problems.
 
 Everything that describes your system—domain entities, database schemas, workflow sequences, state transitions—lives in `docs/` alongside your source code.
 
-![Modular organization: one file per entity, versioned with your code](/.articles/.screenshots/folder-structure.png)<br>
+![Modular organization: one file per entity, versioned with your code](/.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/.screenshots/folder-structure.png)<br>
 *Modular organization: one file per entity, versioned with your code*
 
 Each entity, workflow, and decision gets its own Markdown file with embedded Mermaid diagrams. When you refactor the `Order` service, you update `docs/architecture/domain/order.md` in the same pull request. Reviewers see the architecture change alongside the implementation.
@@ -54,7 +54,7 @@ It's a realistic e-commerce domain with 5 entities (Customer, Order, OrderItem, 
 
 Here's what GitHub renders natively, with no plugins or external tools:
 
-![GitHub renders Mermaid diagrams natively—no external tools needed](/.articles/.screenshots/create-order-flow.png)
+![GitHub renders Mermaid diagrams natively—no external tools needed](/.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code,%20Not%20in%20Tools/.screenshots/create-order-flow.png)
 *GitHub renders Mermaid diagrams natively—no external tools needed*
 
 The sequence diagram above shows a complete order creation flow: stock validation, transaction handling, payment processing, and error cases. It's all plain text in a `.md` file, but GitHub (and your IDE) renders it as a visual diagram.
