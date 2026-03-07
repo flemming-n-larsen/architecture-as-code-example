@@ -41,13 +41,15 @@ graph TD
 
 In the agentic AI age, these map directly to:
 
-| Layer | Practice | Tooling |
-|---|---|---|
-| **Architecture** | Architecture as Code (AoC) | Markdown, Mermaid, ADRs, C4 |
-| **Design** | Spec-Driven Development (SDD) | OpenSpec, `proposal.md`, `tasks.md` |
-| **Implementation** | Agentic AI | Claude Code, GitHub Copilot, Cursor… |
+| Layer              | Practice                      | Tooling                              |
+|--------------------|-------------------------------|--------------------------------------|
+| **Architecture**   | Architecture as Code (AoC)    | Markdown, Mermaid, ADRs, C4          |
+| **Design**         | Spec-Driven Development (SDD) | OpenSpec, `proposal.md`, `tasks.md`  |
+| **Implementation** | Agentic AI                    | Claude Code, GitHub Copilot, Cursor… |
 
-The key insight: **AI is excellent at implementation. Humans are still required for architecture and design.** Feed the AI well-structured context and it will reward you with code that respects your intent.
+The key insight: **AI is excellent at implementation. Humans are still required for architecture and design.** Feed the AI well-structured context, and it will reward you with code that respects your intent.
+
+> ⚠️ **A word of honesty:** LLMs are not truly *intelligent* — they are extraordinarily capable automation engines. They recognize patterns, complete instructions, and generate plausible output at scale. That is exactly why they excel at implementation: code is highly structured and pattern-rich. Architecture and design, by contrast, require *judgment*, *intent*, and *accountability* — things that still require a human in the loop.
 
 ---
 
@@ -55,19 +57,21 @@ The key insight: **AI is excellent at implementation. Humans are still required 
 
 This is not the first time the developer's job has changed. It has been changing continuously:
 
-| Era | Tool / Shift | What changed |
-|---|---|---|
-| 1940s | Plugboards & paper tape | Humans *were* the computers |
-| 1950s | Assembly & FORTRAN | Abstracted away machine code |
-| 1970s | Structured languages (C) | Abstracted away hardware-specific assembly |
-| 1980s | IDEs & debuggers | Integrated the edit-compile-debug toolchain |
-| 1990s | OOP & version control | Encapsulated complexity; tracked change history |
-| 2000s | Managed runtimes (.NET, JVM) | Abstracted away memory management |
-| 2010s | Cloud, containers, CI/CD | Abstracted away infrastructure |
-| 2020s | AI code completion (Copilot) | Abstracted away boilerplate |
-| **Now** | **Agentic AI** | **Abstracted away the coding** |
+| Era     | Tool / Shift                 | What changed                                    |
+|---------|------------------------------|-------------------------------------------------|
+| 1940s   | Plugboards & paper tape      | Humans *were* the computers                     |
+| 1950s   | Assembly & FORTRAN           | Abstracted away machine code                    |
+| 1970s   | Structured languages (C)     | Abstracted away hardware-specific assembly      |
+| 1980s   | IDEs & debuggers             | Integrated the edit-compile-debug toolchain     |
+| 1990s   | OOP & version control        | Encapsulated complexity; tracked change history |
+| 2000s   | Managed runtimes (.NET, JVM) | Abstracted away memory management               |
+| 2010s   | Cloud, containers, CI/CD     | Abstracted away infrastructure                  |
+| 2020s   | AI code completion (Copilot) | Abstracted away boilerplate                     |
+| **Now** | **Agentic AI**               | **Abstracted away the coding**                  |
 
 Each step made developers *more powerful*, not obsolete. Agentic AI is no different — it just raises the bar for what "doing the work" means. The developers who thrive are the ones who double down on architecture and design, because that is what the AI cannot do for you.
+
+As AI automation continues to advance, the AI's share of the implementation work will only grow. But developers will likely remain in the loop — not because the AI can execute, but because **intent, judgment, and accountability** are human responsibilities. An LLM has no stake in the outcome. You do.
 
 ```mermaid
 timeline
@@ -90,13 +94,13 @@ Agentic AI thrives on **context** and **intent** — both of which are usually b
 
 Here is why they are a game-changer for autonomous agents:
 
-| Benefit | Without ADRs | With ADRs |
-|---|---|---|
-| **Guardrails** | Agent picks any library or pattern it likes | Agent stays within explicitly accepted decisions |
-| **Refactoring safety** | Agent "fixes" code that was intentional | Agent understands the *why* and leaves it alone |
-| **Reasoning alignment** | Agent guesses the rationale | Agent reads the logical derivation |
-| **Impact analysis** | Agent proposes changes blindly | Agent cross-references its plan against accepted records |
-| **ADR generation** | Written manually, often skipped | Agent drafts the ADR from the PR diff |
+| Benefit                 | Without ADRs                                | With ADRs                                                |
+|-------------------------|---------------------------------------------|----------------------------------------------------------|
+| **Guardrails**          | Agent picks any library or pattern it likes | Agent stays within explicitly accepted decisions         |
+| **Refactoring safety**  | Agent "fixes" code that was intentional     | Agent understands the *why* and leaves it alone          |
+| **Reasoning alignment** | Agent guesses the rationale                 | Agent reads the logical derivation                       |
+| **Impact analysis**     | Agent proposes changes blindly              | Agent cross-references its plan against accepted records |
+| **ADR generation**      | Written manually, often skipped             | Agent drafts the ADR from the PR diff                    |
 
 > **Bottom line:** ADRs turn "tribal knowledge" into "machine-readable intent."
 
@@ -133,8 +137,8 @@ graph TD
 
 ### Why the upfront cost is worth it
 
-- **Forces clarity before commitment** — design issues surface when they are cheap to fix, not after implementation
-- **AI as a nit-picker** — plan-mode AI exposes ambiguity and underspecified edge cases at review, not during testing
+- **Forces clarity before commitment** — design issues surface when they are inexpensive to fix, not after implementation
+- **AI as a nitpicker** — plan-mode AI exposes ambiguity and underspecified edge cases at review, not during testing
 - **Documentation by construction** — the spec *is* the design document; it exists before the code does
 - **Change proposals replace code reviews** — reviewers verify the proposal is sound and internalize the design; once the spec is approved and the AI has implemented it, a human code review of the generated code adds little additional confidence
 
@@ -168,9 +172,9 @@ One true benefit of this approach: **documentation must be written up front.** T
 
 ## 📖 Navigation
 
-← **[Previous: Architecture as Code in Practice](../3.%20Architecture%20as%20Code%20in%20Practice/README.md)** (Part 3)
+← **[Previous: Architecture as Code in Practice](../3.%20Architecture%20as%20Code%20in%20Practice/README.md)**
 
-→ **[Next: Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests](#)** (Part 5) *(coming soon)*
+→ **[Up next: Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests](#)** *(future article)*
 
 ---
 
