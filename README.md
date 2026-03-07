@@ -22,6 +22,7 @@ This repository accompanies this article series:
 | 1 | [Keep Your Architecture Diagrams in Code, Not in Tools](.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code%2C%20Not%20in%20Tools/README.md) | Why and how to store diagrams as plain text in your repo       |
 | 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)                         | Spec-driven development so AI agents respect your architecture |
 | 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)                                                     | ADRs, C4 diagrams, and domain models working together          |
+| 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)                  | The mindset that ties architecture, design, and agentic AI together |
 
 ---
 
@@ -382,6 +383,7 @@ This keeps architecture and implementation synchronized and reviewable in the sa
 | 1 | [Keep Your Architecture Diagrams in Code, Not in Tools](.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code%2C%20Not%20in%20Tools/README.md) |
 | 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md) |
 | 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md) |
+| 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md) |
 
 ### Architecture Decision Records
 

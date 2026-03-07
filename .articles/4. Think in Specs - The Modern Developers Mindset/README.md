@@ -4,7 +4,7 @@
 
 ---
 
-👉 [Read on Hashnode](#) *(coming soon)*
+👉 [Read on Hashnode](https://architecture-as-code.hashnode.dev/think-in-specs-the-modern-developers-mindset)
 
 ---
 
