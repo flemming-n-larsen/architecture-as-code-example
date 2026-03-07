@@ -20,7 +20,7 @@ This article builds on the foundation from the previous 'Architecture as Code' a
 
 Your job is still software development — **just without the coding.**
 
-The previous articles showed *how* to store architecture as plain text (AoC), *how* to design features before writing code (SDD), and *how* to use agentic AI to do the implementation. This article is about the mindset that ties it all together: **nothing has fundamentally changed about how we develop software — we still work across architecture, design, and implementation.** We have simply stopped being required to write the production code ourselves.
+The previous articles showed *how* to store architecture as code (AoC), *how* to design features before writing code ([SDD](https://en.wikipedia.org/wiki/Spec-driven_development)), and *how* to use agentic AI to do the implementation. This article is about the mindset that ties it all together: **nothing has fundamentally changed about how we develop software — we still work across architecture, design, and implementation.** We have simply stopped being required to write the production code ourselves.
 
 ---
 
@@ -30,9 +30,9 @@ Software development has always moved through three layers:
 
 ```mermaid
 graph TD
-    A["🏛️ Architecture\n<i>Why decisions were made.\nADRs, C4 diagrams, domain models, flows.</i>"]
-    B["📋 Design\n<i>How we intend to build it.\nSpecs, acceptance criteria, tasks.</i>"]
-    C["⚙️ Implementation\n<i>The actual code.\nWritten by an agentic AI.</i>"]
+    A["🏛️ Architecture<br><i>Why decisions were made.<br>ADRs, C4 diagrams, domain models, flows.</i>"]
+    B["📋 Design<br><i>How we intend to build it.<br>Specs, acceptance criteria, tasks.</i>"]
+    C["⚙️ Implementation<br><i>The actual code.<br>Written by an agentic AI.</i>"]
 
     A --> B
     B --> C
@@ -41,11 +41,11 @@ graph TD
 
 In the agentic AI age, these map directly to:
 
-| Layer              | Practice                      | Tooling                              |
-|--------------------|-------------------------------|--------------------------------------|
-| **Architecture**   | Architecture as Code (AoC)    | Markdown, Mermaid, ADRs, C4          |
-| **Design**         | Spec-Driven Development (SDD) | OpenSpec, `proposal.md`, `tasks.md`  |
-| **Implementation** | Agentic AI                    | Claude Code, GitHub Copilot, Cursor… |
+| Layer              | Practice                      | Tooling                                             |
+|--------------------|-------------------------------|-----------------------------------------------------|
+| **Architecture**   | Architecture as Code (AoC)    | Markdown, Mermaid, [ADRs](https://adr.github.io/madr/), [C4 Views](https://c4model.com/) |
+| **Design**         | [Spec-Driven Development (SDD)](https://en.wikipedia.org/wiki/Spec-driven_development) | [OpenSpec](https://openspec.dev/), proposal.md, design.md, tasks.md, spec.md |
+| **Implementation** | Agentic AI                    | Claude Code, GitHub Copilot, Cursor…                |
 
 The key insight: **AI is excellent at implementation. Humans are still required for architecture and design.** Feed the AI well-structured context, and it will reward you with code that respects your intent.
 
@@ -73,24 +73,11 @@ Each step made developers *more powerful*, not obsolete. Agentic AI is no differ
 
 As AI automation continues to advance, the AI's share of the implementation work will only grow. But developers will likely remain in the loop — not because the AI can execute, but because **intent, judgment, and accountability** are human responsibilities. An LLM has no stake in the outcome. You do.
 
-```mermaid
-timeline
-    title The Evolution of Software Development
-    1940s : Plugboards & Paper Tape
-    1950s : Assembly & High-Level Languages
-    1970s : Structured Languages & IDEs
-    1990s : OOP & Version Control
-    2000s : Managed Runtimes & Frameworks
-    2010s : Cloud, Containers & CI/CD
-    2020s : AI Code Completion
-    Now   : Agentic AI — just without the coding
-```
-
 ---
 
 ## 🗂️ ADRs as Machine-Readable Intent
 
-Agentic AI thrives on **context** and **intent** — both of which are usually buried in a developer's head rather than in the source code. Architectural Decision Records (ADRs) turn that tribal knowledge into machine-readable instructions.
+Agentic AI thrives on **context** and **intent** — both of which are usually buried in a developer's head rather than in the source code. [Architectural Decision Records (ADRs)](https://adr.github.io/madr/) turn that tribal knowledge into machine-readable instructions.
 
 Here is why they are a game-changer for autonomous agents:
 
@@ -110,7 +97,7 @@ See [Architecture as Code in Practice](../3.%20Architecture%20as%20Code%20in%20P
 
 ## 📐 Spec-Driven Development (SDD)
 
-SDD means writing a spec that captures design intent *before* any code is written. The agentic AI then uses that spec as its instruction manual.
+[SDD](https://en.wikipedia.org/wiki/Spec-driven_development) means writing a spec that captures design intent *before* any code is written. The agentic AI then uses that spec as its instruction manual.
 
 A change proposal (e.g. using [OpenSpec](https://openspec.dev/)) contains:
 
@@ -122,10 +109,10 @@ The workflow is deliberately front-loaded:
 
 ```mermaid
 graph TD
-    P["👤 + 🤖 Write change proposal\n<i>(strong AI in plan mode)</i>"]
-    R["👤 Review & refine\n<i>(human judgment — don't skip this)</i>"]
-    I["🤖 Implement task by task\n<i>(regular AI)</i>"]
-    A["🤖 Archive & merge delta into specs\n<i>(regular AI)</i>"]
+    P["👤 + 🤖 Write change proposal<br><i>(strong AI in plan mode)</i>"]
+    R["👤 Review & refine<br><i>(human judgment — don't skip this)</i>"]
+    I["🤖 Implement task by task<br><i>(regular AI)</i>"]
+    A["🤖 Archive & merge delta into specs<br><i>(regular AI)</i>"]
 
     P --> R --> I --> A
     A -->|"Next change"| P
@@ -154,10 +141,10 @@ AoC + SDD + Agentic AI form a closed loop:
 
 ```mermaid
 graph TD
-    AoC["🏛️ Architecture as Code\nADRs · C4 · Domain models · Flows"]
-    SDD["📋 Spec-Driven Development\nChange proposals · Specs · Tasks"]
-    AI["⚙️ Agentic AI\nImplementation · Archiving"]
-    Repo["📁 Mono-repo\nSingle source of truth"]
+    AoC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · Flows"]
+    SDD["📋 Spec-Driven Development<br>Change proposals · Specs · Tasks"]
+    AI["⚙️ Agentic AI<br>Implementation · Archiving"]
+    Repo["📜 Mono-repo<br>Single source of truth"]
 
     Repo --> AoC
     Repo --> SDD
@@ -167,6 +154,21 @@ graph TD
 ```
 
 One true benefit of this approach: **documentation must be written up front.** The AI needs accurate, up-to-date context — the same way a new team member would. Outdated or missing documentation produces poor AI output for the same reason it produces poor human output.
+
+---
+
+## 🔗 References
+
+| Resource                                                                                                                     | Description                                                                                       |
+|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [OpenSpec](https://openspec.dev/)                                                                                            | The open specification format used for change proposals and spec-driven workflows in this article |
+| [Spec-Driven Development — Wikipedia](https://en.wikipedia.org/wiki/Spec-driven_development)                                 | Overview of the SDD methodology                                                                   |
+| [MADR — Markdown Architectural Decision Records](https://adr.github.io/madr/)                                                | A lightweight ADR template format designed to be readable by both humans and machines             |
+| [C4 Model](https://c4model.com/)                                                                                             | The C4 approach to visualizing software architecture (Context, Containers, Components, Code)      |
+| [The C4 Model for Visualizing Software Architecture](https://leanpub.com/the-c4-model-for-visualising-software-architecture) | Simon Brown's book on the C4 model                                                                |
+| [Structurizr DSL](https://structurizr.com/dsl)                                                                               | Domain-specific language for defining C4 architecture models as code                              |
+| [Architecture Decision Records (ADR GitHub org)](https://adr.github.io/)                                                     | Community resources, tooling, and templates for ADRs                                              |
+| [thoughtworks.com — Evolutionary Architecture](https://www.thoughtworks.com/radar/techniques/evolutionary-architecture)      | Background on treating architecture as a living, evolving artifact                                |
 
 ---
 
