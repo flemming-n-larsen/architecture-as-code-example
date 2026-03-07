@@ -42,8 +42,23 @@ Core domain models and business flow documentation that serve as the foundation 
 
 ---
 
+### 4. **Infrastructure as Code (IaC)**
+**[👉 /iac](./iac/)**
+
+Infrastructure specs that define *where* the system runs and *what guardrails* govern it. IaC files are
+version-controlled contracts for your environment — reviewable and enforceable before anything hits a pipeline.
+- **[Networking](iac/networking.md)** — VPC topology, subnets, and security-group rules
+- **[IAM](iac/iam.md)** — Per-service roles and least-privilege policies
+- **[Environments](iac/environments.md)** — Dev / staging / prod definitions and promotion guardrails
+
+*Best for:* Understanding the infrastructure boundaries, identity constraints, and deployment guardrails that
+enforce the architecture decisions at the platform level.
+
+---
+
 ## Quick Start
 
 1. **New to the project?** Start with [C4 Views - System Context](c4-views/system-context.md)
 2. **Want to understand design decisions?** Check the [ADRs](./adr/)
 3. **Need to understand data models?** See [Architecture Models](./models/)
+4. **Deploying or reviewing infra?** See [Infrastructure as Code](./iac/)

@@ -48,28 +48,33 @@ Software development still moves through three layers — AI changes *who* does 
 
 | Layer | Practice | What lives here |
 |:------|:---------|:----------------|
-| **🏛️ Architecture** | Architecture as Code (AoC) | ADRs, C4 diagrams, domain models, flows |
+| **🏛️ Architecture** | Architecture as Code (AoC) | ADRs, C4 diagrams, domain models, flows, IaC specs |
 | **📋 Design** | [Spec-Driven Development (SDD)](https://en.wikipedia.org/wiki/Spec-driven_development) | Change proposals, specs, tasks |
 | **⚙️ Implementation** | Agentic AI | Code — written by the AI from the spec |
 
 > **Key insight:** AI is excellent at implementation. Humans are still required for architecture and design.
 > See the [article series](#-article-series) for the full mindset behind this approach.
 
-### 🏗️ The Three Pillars of Architecture as Code
+### 🏗️ The Four Pillars of Architecture as Code
 
 ```
 architecture/
-├── adr/                    # WHY: Architecture Decision Records
+├── adr/                    # WHY:             Architecture Decision Records
 │   └── 0001-use-uuid-primary-keys.md
-├── c4-views/               # WHAT: System structure at multiple zoom levels
+├── c4-views/               # WHAT:            System structure at multiple zoom levels
 │   └── system-context.md
-└── models/                 # HOW: Domain entities and business flows
-    ├── domain/order.md
-    └── flows/create-order.md
+├── models/                 # HOW:             Domain entities and business flows
+│   ├── domain/order.md
+│   └── flows/create-order.md
+└── iac/                    # WHERE/GUARDRAILS: Infrastructure specs and environment policy
+    ├── networking.md
+    ├── iam.md
+    └── environments.md
 ```
 
-**ADRs** document *why* decisions were made, **C4 diagrams** show *what* the system looks like, and **domain models**
-explain *how* entities relate and workflows execute.
+**ADRs** document *why* decisions were made, **C4 diagrams** show *what* the system looks like, **domain models**
+explain *how* entities relate and workflows execute, and **IaC specs** define *where* the system runs and what
+guardrails govern it.
 
 ### 🔗 Quick Links
 
@@ -78,6 +83,7 @@ explain *how* entities relate and workflows execute.
 | **ADRs**           | [architecture/adr/](docs/architecture/adr/README.md)           | Architecture Decision Records (MADR format) |
 | **C4 Views**       | [architecture/c4-views/](docs/architecture/c4-views/README.md) | System diagrams at multiple zoom levels     |
 | **Domain Models**  | [architecture/models/](docs/architecture/models/README.md)     | Entity and workflow documentation           |
+| **IaC Specs**      | [architecture/iac/](docs/architecture/iac/README.md)           | Networking, IAM, and environment guardrails |
 | **Specifications** | [openspec/](./openspec/README.md)                              | Detailed behavior specifications            |
 | **User Stories**   | [docs/user-stories/](./docs/user-stories/README.md)            | Feature backlog                             |
 | **AI Guidelines**  | [AGENTS.md](./AGENTS.md)                                       | Guidelines for AI agents                    |
@@ -92,7 +98,7 @@ explain *how* entities relate and workflows execute.
 ├── .tools/                           # Development tooling and scripts
 ├── AGENTS.md                         # AI agent guidelines
 ├── CONTRIBUTING.md                   # Contribution guidelines
-├── architecture/                     # ⭐ Core: Three-pillar architecture documentation
+├── architecture/                     # ⭐ Core: Four-pillar architecture documentation
 │   ├── adr/                          # Architecture Decision Records (WHY)
 │   │   ├── 0001-use-uuid-primary-keys.md
 │   │   ├── 0002-microservices-architecture.md
@@ -104,16 +110,20 @@ explain *how* entities relate and workflows execute.
 │   │   ├── container.md
 │   │   ├── order-service-component.md
 │   │   └── payment-service-component.md
-│   └── models/                       # Domain models and flows (HOW)
-│       ├── domain/                   # Entity diagrams
-│       │   ├── customer.md
-│       │   ├── order.md
-│       │   ├── product.md
-│       │   └── payment.md
-│       └── flows/                    # Business workflows
-│           ├── create-order.md
-│           ├── payment-processing.md
-│           └── inventory-management.md
+│   ├── models/                       # Domain models and flows (HOW)
+│   │   ├── domain/                   # Entity diagrams
+│   │   │   ├── customer.md
+│   │   │   ├── order.md
+│   │   │   ├── product.md
+│   │   │   └── payment.md
+│   │   └── flows/                    # Business workflows
+│   │       ├── create-order.md
+│   │       ├── payment-processing.md
+│   │       └── inventory-management.md
+│   └── iac/                          # Infrastructure specs (WHERE/GUARDRAILS)
+│       ├── networking.md             # VPC topology and security groups
+│       ├── iam.md                    # Per-service roles and least-privilege policies
+│       └── environments.md          # Dev / staging / prod guardrails
 ├── docs/                             # Additional documentation
 │   ├── requirements.md
 │   └── user-stories/
@@ -188,6 +198,22 @@ C4 diagrams show the system structure at multiple zoom levels:
 
 ---
 
+### 4. Infrastructure as Code Specs — The "Where & Guardrails"
+
+**[👉 architecture/iac/](docs/architecture/iac/README.md)**
+
+IaC files are not just automation scripts — they are version-controlled contracts for your environment. Treating
+them as specs means they live in the repo alongside ADRs and C4 diagrams, and can be reviewed, linted, and enforced
+*before* anything hits a pipeline. See [Microsoft: What is Infrastructure as Code?](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code).
+
+- **[Networking](docs/architecture/iac/networking.md)** — VPC topology, subnets, and per-service security-group rules
+- **[IAM](docs/architecture/iac/iam.md)** — Per-service roles, least-privilege policies, and RabbitMQ permissions
+- **[Environments](docs/architecture/iac/environments.md)** — Dev / staging / prod definitions and promotion guardrails
+
+**Format:** Markdown specs (cloud-agnostic) — acts as the human-readable contract that Terraform / Bicep / Pulumi files implement.
+
+---
+
 ## 📚 Documentation Structure
 
 - **[Architecture Hub](docs/architecture/README.md)** — Start here for the complete architecture overview
@@ -201,6 +227,8 @@ C4 diagrams show the system structure at multiple zoom levels:
 **Want to understand a feature?** [Create Order Flow](docs/architecture/models/flows/create-order.md) → [Order Model](docs/architecture/models/domain/order.md) → Related ADRs
 
 **Looking for past decisions?** Browse the [ADR index](docs/architecture/adr/README.md)
+
+**Deploying or reviewing infra?** [Networking](docs/architecture/iac/networking.md) → [IAM](docs/architecture/iac/iam.md) → [Environments](docs/architecture/iac/environments.md)
 
 ---
 
@@ -399,7 +427,7 @@ MIT License — Free to use and adapt for any purpose. See [LICENSE](./LICENSE) 
 ## 🚀 Get Started
 
 1. 🏗️ **Start:** [architecture/README.md](docs/architecture/README.md) — Architecture hub overview
-2. 🔍 **Explore:** [architecture/](docs/architecture/README.md) — See the three pillars in action
+2. 🔍 **Explore:** [architecture/](docs/architecture/README.md) — See the four pillars in action
 3. 📖 **Read:** Pick an article from the [series](#-article-series) for background context
 4. 💡 **Adapt:** Fork this repo and customize for your project
 
