@@ -102,6 +102,7 @@ See [Architecture as Code in Practice](../3.%20Architecture%20as%20Code%20in%20P
 A change proposal (e.g. using [OpenSpec](https://openspec.dev/)) contains:
 
 - **`proposal.md`** — the what, why, and acceptance criteria
+- **`design.md`** — the detailed technical design for this change
 - **`specs/`** — per-feature specifications (referenced, never duplicated from architecture)
 - **`tasks.md`** — the ordered list of implementation tasks
 
