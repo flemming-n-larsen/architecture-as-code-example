@@ -12,10 +12,10 @@ Future articles for the **Architecture as Code** series.
 
 **The spectrum:**
 
-| Mode | Goal | Lifespan | Needs |
-|---|---|---|---|
-| Vibe Coding | Explore / prototype | Days | Nothing — throw it away |
-| Professional AI dev | Production software | Years | Architecture, specs, standards |
+| Mode                | Goal                | Lifespan | Needs                          |
+|---------------------|---------------------|----------|--------------------------------|
+| Vibe Coding         | Explore / prototype | Days     | Nothing — throw it away        |
+| Professional AI dev | Production software | Years    | Architecture, specs, standards |
 
 **Topics to cover:**
 
