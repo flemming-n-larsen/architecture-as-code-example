@@ -90,6 +90,6 @@
 ---
 
 **Related Documentation:**
-- [Architecture Overview](architecture/) — See how requirements are implemented
-- [User Stories](user-stories/) — See features derived from requirements
+- [Architecture Overview](architecture/README.md) — See how requirements are implemented
+- [User Stories](user-stories/README.md) — See features derived from requirements
 

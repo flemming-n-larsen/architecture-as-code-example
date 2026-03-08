@@ -102,6 +102,6 @@ Internal architecture of the Payment Service microservice:
 ## Related Documentation
 
 For more context on the architecture, see:
-- [Architecture Decision Records (ADRs)](../adr/) — Design decisions and rationale
-- [Domain Models](../models/domain/) — Core business entities
-- [Domain Flows](../models/flows/) — Key business processes
+- [Architecture Decision Records (ADRs)](../adr/README.md) — Design decisions and rationale
+- [Domain Models](../models/domain/README.md) — Core business entities
+- [Domain Flows](../models/flows/README.md) — Key business processes

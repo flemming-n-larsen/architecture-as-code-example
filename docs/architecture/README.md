@@ -8,7 +8,7 @@ to demonstrate how the concept.
 ## 📚 Documentation Index
 
 ### 1. **Architecture Decision Records (ADRs)**
-**[👉 /adr](./adr/)**
+**[👉 /adr](./adr/README.md)**
 
 Captures the significant architectural decisions made during system design and evolution.
 - [0001: Use UUID Primary Keys](adr/0001-use-uuid-primary-keys.md)
@@ -20,7 +20,7 @@ Captures the significant architectural decisions made during system design and e
 ---
 
 ### 2. **C4 Views**
-**[👉 /c4-views](./c4-views/)**
+**[👉 /c4-views](./c4-views/README.md)**
 
 Hierarchical architecture diagrams at different levels of abstraction (Context, Container, Component).
 - **System Context** — High-level view of the entire platform and external systems
@@ -32,7 +32,7 @@ Hierarchical architecture diagrams at different levels of abstraction (Context, 
 ---
 
 ### 3. **Architecture Models**
-**[👉 /models](./models/)**
+**[👉 /models](./models/README.md)**
 
 Core domain models and business flow documentation that serve as the foundation for the system.
 - **Domain Models** — Core entities (Customer, Order, Payment, Product, etc.) and their relationships
@@ -43,7 +43,7 @@ Core domain models and business flow documentation that serve as the foundation 
 ---
 
 ### 4. **Infrastructure as Code (IaC)**
-**[👉 /iac](./iac/)**
+**[👉 /iac](./iac/README.md)**
 
 Infrastructure specs that define *where* the system runs and *what guardrails* govern it. IaC files are
 version-controlled contracts for your environment — reviewable and enforceable before anything hits a pipeline.
@@ -59,6 +59,6 @@ enforce the architecture decisions at the platform level.
 ## Quick Start
 
 1. **New to the project?** Start with [C4 Views - System Context](c4-views/system-context.md)
-2. **Want to understand design decisions?** Check the [ADRs](./adr/)
-3. **Need to understand data models?** See [Architecture Models](./models/)
-4. **Deploying or reviewing infra?** See [Infrastructure as Code](./iac/)
+2. **Want to understand design decisions?** Check the [ADRs](./adr/README.md)
+3. **Need to understand data models?** See [Architecture Models](./models/README.md)
+4. **Deploying or reviewing infra?** See [Infrastructure as Code](./iac/README.md)

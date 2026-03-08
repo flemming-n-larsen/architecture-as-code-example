@@ -63,6 +63,6 @@ Gherkin scenarios
 ---
 
 **Related Documentation:**
-- [Architecture Overview](../architecture/)
+- [Architecture Overview](../architecture/README.md)
 - [Requirements](../requirements.md)
 

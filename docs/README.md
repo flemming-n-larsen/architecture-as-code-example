@@ -5,23 +5,23 @@ Welcome! This documentation describes the architecture, requirements, and user s
 ## 🧭 Quick Navigation
 
 ### 🏗️ Architecture Documentation
-- **[Architecture Overview](architecture/)** — System design, entities, and workflows
-  - [Domain Model](architecture/models/domain/) — Core business entities (Customer, Order, Product, Payment)
-  - [Workflows](architecture/models/flows/) — How the system processes requests
-  - [Decisions](architecture/adr/) — Architecture Decision Records (ADRs)
+- **[Architecture Overview](architecture/README.md)** — System design, entities, and workflows
+  - [Domain Model](architecture/models/domain/README.md) — Core business entities (Customer, Order, Product, Payment)
+  - [Workflows](architecture/models/flows/README.md) — How the system processes requests
+  - [Decisions](architecture/adr/README.md) — Architecture Decision Records (ADRs)
   - [Requirements](requirements.md) — Functional and non-functional requirements
-  - [User Stories](user-stories/) — Feature backlog and acceptance criteria
+  - [User Stories](user-stories/README.md) — Feature backlog and acceptance criteria
 
 ## 📖 How to Use This Documentation
 
 This documentation is **not meant to be read linearly**. Instead:
 
-1. **Start with [Architecture Overview](architecture/)** for the big picture
+1. **Start with [Architecture Overview](architecture/README.md)** for the big picture
 2. **Understand system [Requirements](requirements.md)** and constraints
-3. **Dive into specific [Domain Models](architecture/models/domain/)** you're interested in
-4. **Navigate [Workflows](architecture/models/flows/)** to understand how data flows through the system
-5. **Review [User Stories](user-stories/)** for feature requirements and acceptance criteria
-6. **Explore [Architecture Decisions](architecture/adr/)** to understand the "why" behind design choices
+3. **Dive into specific [Domain Models](architecture/models/domain/README.md)** you're interested in
+4. **Navigate [Workflows](architecture/models/flows/README.md)** to understand how data flows through the system
+5. **Review [User Stories](user-stories/README.md)** for feature requirements and acceptance criteria
+6. **Explore [Architecture Decisions](architecture/adr/README.md)** to understand the "why" behind design choices
 7. **Use cross-links** within each page to explore related concepts
 
 ## 🎯 Key Principles
@@ -46,20 +46,20 @@ Our system consists of:
 ## 🚀 Getting Started
 
 ### For Developers
-- Review [Architecture Overview](architecture/) to understand the system design
-- Check [Domain Model](architecture/models/domain/) for entity details
-- Follow [Workflows](architecture/models/flows/) to understand request processing
-- Implement features aligned with [User Stories](user-stories/)
+- Review [Architecture Overview](architecture/README.md) to understand the system design
+- Check [Domain Model](architecture/models/domain/README.md) for entity details
+- Follow [Workflows](architecture/models/flows/README.md) to understand request processing
+- Implement features aligned with [User Stories](user-stories/README.md)
 
 ### For Product Managers
 - Start with [Requirements](requirements.md) for functional and non-functional requirements
-- Review [User Stories](user-stories/) to see features and acceptance criteria
-- Check [Architecture Overview](architecture/) to understand technical constraints
+- Review [User Stories](user-stories/README.md) to see features and acceptance criteria
+- Check [Architecture Overview](architecture/README.md) to understand technical constraints
 
 ### For Architects
-- Explore [Architecture Decisions](architecture/adr/) for key design choices
+- Explore [Architecture Decisions](architecture/adr/README.md) for key design choices
 - Review [Requirements](requirements.md) for non-functional requirements and constraints
-- Check entity relationships in [Domain Model](architecture/models/domain/)
+- Check entity relationships in [Domain Model](architecture/models/domain/README.md)
 
 ## 🤝 Contributing to Documentation
 
@@ -104,15 +104,15 @@ docs/
 
 ## 🔗 Quick Links
 
-- **[Architecture Overview](architecture/)** — System design at a glance
+- **[Architecture Overview](architecture/README.md)** — System design at a glance
 - **[Requirements](requirements.md)** — What the system must do
-- **[User Stories](user-stories/)** — User-facing features
-- **[Domain Model](architecture/models/domain/)** — Core entities
-- **[Workflows](architecture/models/flows/)** — How data flows
-- **[Decisions](architecture/adr/)** — Architecture Decision Records
+- **[User Stories](user-stories/README.md)** — User-facing features
+- **[Domain Model](architecture/models/domain/README.md)** — Core entities
+- **[Workflows](architecture/models/flows/README.md)** — How data flows
+- **[Decisions](architecture/adr/README.md)** — Architecture Decision Records
 
 ---
 
-**Ready to explore?** Start with the [Architecture Overview](architecture/) 🚀
+**Ready to explore?** Start with the [Architecture Overview](architecture/README.md) 🚀
 
 
