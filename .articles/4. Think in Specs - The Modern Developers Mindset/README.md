@@ -158,18 +158,46 @@ One true benefit of this approach: **documentation must be written up front.** T
 
 ---
 
+## 🧪 But What About AI Code Quality?
+
+A common concern: *"AI-generated code is unreliable — how can you trust it?"*
+
+Neither humans nor LLMs produce deterministic code — and that was never the goal. The goal is code that fulfills the **intended behavior** and meets the **acceptance criteria**. LLMs will make mistakes, just like humans do. But *why* do mistakes happen in the first place? Typically: wrong information, missing information, or weak information. That is exactly the problem that specs solve — and they solve it for human developers too.
+
+**This entire spec-driven process works without AI.** Good documentation has always reduced defects and miscommunication. AI simply makes it more valuable, because now *two* consumers read your specs: humans and machines.
+
+### How you verify correctness
+
+- **Acceptance Testing (ATDD/BDD)** — Define tests that cover every acceptance criterion *before* implementation. If the tests pass, the code fulfills its intent — regardless of who or what wrote it. See [Acceptance Testing (CD Training)](https://courses.cd.training/pages/acceptance-testing) for a practical introduction.
+- **Normal review process** — You can still review AI-generated code the same way you review human-written code. You can also correct specs during implementation, the same way you would update Jira tickets. There is no difference.
+- **Iterate on specs** — Specs are living documents. When implementation reveals a gap, update the spec. The feedback loop is the same as it has always been.
+
+### What the research says
+
+A peer-reviewed study co-authored by David Farley — *"Echoes of AI: Investigating the Downstream Effects of AI Assistants on Software Maintainability"* (2025) — found **no significant difference** in maintenance cost between AI-assisted and human-generated code. When used by experienced developers, AI-assisted code actually showed slightly better code health and faster initial development ([ResearchGate](https://www.researchgate.net/publication/393261441_Echoes_of_AI_Investigating_the_Downstream_Effects_of_AI_Assistants_on_Software_Maintainability)).
+
+MIT researchers have also shown that structured context and better specifications directly improve AI code accuracy — which is exactly what spec-driven development provides ([MIT News, 2025](https://news.mit.edu/2025/making-ai-generated-code-more-accurate-0418)).
+
+> Using architecture as code and spec-driven development with AI is not a "dream." It is our new reality. The dream is thinking software development will not evolve with AI.
+
+---
+
 ## 🔗 References
 
-| Resource                                                                                                                     | Description                                                                                       |
-|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [OpenSpec](https://openspec.dev/)                                                                                            | The open specification format used for change proposals and spec-driven workflows in this article |
-| [Spec-Driven Development — Wikipedia](https://en.wikipedia.org/wiki/Spec-driven_development)                                 | Overview of the SDD methodology                                                                   |
-| [MADR — Markdown Architectural Decision Records](https://adr.github.io/madr/)                                                | A lightweight ADR template format designed to be readable by both humans and machines             |
-| [C4 Model](https://c4model.com/)                                                                                             | The C4 approach to visualizing software architecture (Context, Containers, Components, Code)      |
-| [The C4 Model for Visualizing Software Architecture](https://leanpub.com/the-c4-model-for-visualising-software-architecture) | Simon Brown's book on the C4 model                                                                |
-| [Structurizr DSL](https://structurizr.com/dsl)                                                                               | Domain-specific language for defining C4 architecture models as code                              |
-| [Architecture Decision Records (ADR GitHub org)](https://adr.github.io/)                                                     | Community resources, tooling, and templates for ADRs                                              |
-| [thoughtworks.com — Evolutionary Architecture](https://www.thoughtworks.com/radar/techniques/evolutionary-architecture)      | Background on treating architecture as a living, evolving artifact                                |
+| Resource                                                                                                                                                                         | Description                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [OpenSpec](https://openspec.dev/)                                                                                                                                                | The open specification format used for change proposals and spec-driven workflows in this article |
+| [Spec-Driven Development — Wikipedia](https://en.wikipedia.org/wiki/Spec-driven_development)                                                                                     | Overview of the SDD methodology                                                                   |
+| [MADR — Markdown Architectural Decision Records](https://adr.github.io/madr/)                                                                                                    | A lightweight ADR template format designed to be readable by both humans and machines             |
+| [C4 Model](https://c4model.com/)                                                                                                                                                 | The C4 approach to visualizing software architecture (Context, Containers, Components, Code)      |
+| [The C4 Model for Visualizing Software Architecture](https://leanpub.com/the-c4-model-for-visualising-software-architecture)                                                     | Simon Brown's book on the C4 model                                                                |
+| [Structurizr DSL](https://structurizr.com/dsl)                                                                                                                                   | Domain-specific language for defining C4 architecture models as code                              |
+| [Architecture Decision Records (ADR GitHub org)](https://adr.github.io/)                                                                                                         | Community resources, tooling, and templates for ADRs                                              |
+| [thoughtworks.com — Evolutionary Architecture](https://www.thoughtworks.com/radar/techniques/evolutionary-architecture)                                                          | Background on treating architecture as a living, evolving artifact                                |
+| [Echoes of AI — ResearchGate](https://www.researchgate.net/publication/393261441_Echoes_of_AI_Investigating_the_Downstream_Effects_of_AI_Assistants_on_Software_Maintainability) | Peer-reviewed study on AI-assisted code maintainability (Farley et al., 2025)                     |
+| [Making AI-generated code more accurate — MIT News](https://news.mit.edu/2025/making-ai-generated-code-more-accurate-0418)                                                       | MIT research on improving AI code accuracy through structured specifications                      |
+| [Acceptance Testing — CD Training](https://courses.cd.training/pages/acceptance-testing)                                                                                         | Practical introduction to ATDD and BDD for verifying acceptance criteria                          |
+| [Modern Software Engineering — YouTube](https://www.youtube.com/watch?v=b9EbCb5A408)                                                                                             | Video walkthrough of the research findings on AI-assisted code quality                            |
 
 ---
 
