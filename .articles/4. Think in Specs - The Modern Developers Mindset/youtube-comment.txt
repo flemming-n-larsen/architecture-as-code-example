@@ -1,0 +1,10 @@
+Great video, David! 🎯 Thank you for sharing this research — it's incredibly valuable for the community. 🙏
+
+I referenced your peer-reviewed study *"Echoes of AI"* in my latest article on spec-driven development with agentic AI. The findings align perfectly with what I've been seeing in practice: when developers provide well-structured context and specifications, AI-assisted code is just as maintainable as human-written code. 💡
+
+I'm a huge fan of your work 🔥 — your talks on GOTO and this channel consistently deliver relevant, practical insights. I hope referencing your research does it justice!
+
+📋 Article: architecture-as-code [dot] hashnode [dot] dev/think-in-specs-the-modern-developers-mindset
+📖 Blog: architecture-as-code [dot] hashnode [dot] dev
+🏗️ Repo: github [dot] com/flemming-n-larsen/architecture-as-code-example
+
