@@ -4,7 +4,33 @@ Future articles for the **Architecture as Code** series.
 
 ---
 
-## 5. Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests
+## 5. Vibe Coding vs. Professional AI Development: Know When to Throw It Away
+
+**Status:** Idea
+
+**Core idea:** AI has made prototyping so fast and cheap that the exploration phase is now nearly free. That's genuinely valuable — but vibe coding is not production software. The gap between "it works on my machine" and "it's maintainable in 18 months" is exactly where Architecture as Code and Spec-Driven Development live.
+
+**The spectrum:**
+
+| Mode | Goal | Lifespan | Needs |
+|---|---|---|---|
+| Vibe Coding | Explore / prototype | Days | Nothing — throw it away |
+| Professional AI dev | Production software | Years | Architecture, specs, standards |
+
+**Topics to cover:**
+
+- What vibe coding actually is — and why it's genuinely useful for exploration and prototyping
+- Why it breaks down at scale: no architecture guardrails, no specs, no maintainability
+- The "legacy code at scale" risk: AI will happily generate unmaintainable code if you let it (ref: Dave Farley & Steve Smith)
+- The prototype-to-production trap: when teams ship vibe code because "it works"
+- How AoC + SDD is the professional counterpart — not the enemy of speed, but the enabler of sustained speed
+- The honest message: vibe coding isn't wrong — it's just not the whole job
+
+**Inspiration:** Dave Farley & Steve Smith discussion on the Modern Software Engineering channel — distinguishing citizen developers using AI for personal scripts vs. professional engineering at enterprise scale.
+
+---
+
+## 6. Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests
 
 **Status:** Next up (referenced in [article 4](4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md))
 
@@ -25,7 +51,7 @@ Future articles for the **Architecture as Code** series.
 
 ---
 
-## 6. AI Review Personas: Thinking Partners from First Principles
+## 7. AI Review Personas: Thinking Partners from First Principles
 
 **Status:** Idea
 
