@@ -182,6 +182,14 @@ MIT researchers have also shown that structured context and better specification
 
 ---
 
+## 🙏 Acknowledgments
+
+Special thanks to **[David Farley](https://www.youtube.com/@ContinuousDelivery)** — one of the most insightful voices in modern software engineering. His peer-reviewed research *["Echoes of AI: Investigating the Downstream Effects of AI Assistants on Software Maintainability"](https://www.researchgate.net/publication/393261441_Echoes_of_AI_Investigating_the_Downstream_Effects_of_AI_Assistants_on_Software_Maintainability)* (2025) was a key reference for this article, providing empirical evidence that well-structured AI-assisted development does not compromise code quality.
+
+Thanks also to the **[Modern Software Engineering](https://www.youtube.com/watch?v=b9EbCb5A408)** YouTube channel for the excellent video walkthrough of the research findings. David's talks — including those on [GOTO Conferences](https://www.youtube.com/@ABORGJAMADO) — consistently deliver relevant, practical insights that I wholeheartedly encourage every developer to watch. I hope referencing his work here does it justice — it has deeply influenced the thinking behind this article.
+
+---
+
 ## 🔗 References
 
 | Resource                                                                                                                                                                         | Description                                                                                       |

@@ -449,6 +449,12 @@ Follow the SDD workflow — front-load the thinking, let the AI do the implement
 
 ---
 
+## 🙏 Acknowledgments
+
+- **[David Farley](https://www.youtube.com/@ContinuousDelivery)** — His peer-reviewed study *["Echoes of AI: Investigating the Downstream Effects of AI Assistants on Software Maintainability"](https://www.researchgate.net/publication/393261441_Echoes_of_AI_Investigating_the_Downstream_Effects_of_AI_Assistants_on_Software_Maintainability)* (Farley et al., 2025) is referenced in [Article 4](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md) and helped ground this project's approach in empirical evidence. His [YouTube channel](https://www.youtube.com/@ContinuousDelivery), talks at [GOTO Conferences](https://www.youtube.com/playlist?list=PLEx5khR4g7PJbSLmADahf0LOpTLifiCra), and the video *[Modern Software Engineering](https://www.youtube.com/watch?v=b9EbCb5A408)* are highly recommended.
+
+---
+
 ## 🤝 Contributing
 
 This is an educational example repository demonstrating the Architecture as Code approach.
