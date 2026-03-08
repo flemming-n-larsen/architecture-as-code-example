@@ -64,7 +64,7 @@ Let's add a `Shipment` entity:
 git checkout -b docs/add-shipment-entity
 
 # 2. Create entity file
-touch docs/architecture/domain/shipment.md
+touch docs/architecture/models/domain/shipment.md
 
 # 3. Edit the file (see template below)
 
@@ -72,7 +72,7 @@ touch docs/architecture/domain/shipment.md
 # Edit docs/architecture/README.md to add Shipment
 
 # 5. Update related flows if needed
-# Edit docs/architecture/flows/create-order.md if shipment is involved
+# Edit docs/architecture/models/flows/create-order.md if shipment is involved
 
 # 6. Commit
 git add docs/
@@ -250,11 +250,11 @@ stateDiagram-v2
 Use relative paths to link between files:
 
 ```markdown
-# From docs/architecture/domain/order.md
+# From docs/architecture/models/domain/order.md
 
 See the [Customer](customer.md) entity.
 Related flow: [Create Order](../flows/create-order.md).
-User story: [Place Order](../../user-stories/story-002-place-order.md).
+User story: [Place Order](../../../user-stories/story-002-place-order.md).
 ```
 
 ### Link Validation
