@@ -1,4 +1,4 @@
-#---
+---
 id: 0003
 title: Event-Driven Communication
 status: Pending
@@ -71,8 +71,8 @@ Implementation considerations:
 
 ## References
 
-- C4 views and components: ../c4-views/order-service-component.md
-- Event design patterns: https://martinfowler.com/articles/201701-event-driven.html
+- [C4 views and components](../c4-views/order-service-component.md)
+- [Event design patterns](https://martinfowler.com/articles/201701-event-driven.html)
 
 ## Review and Updates
 

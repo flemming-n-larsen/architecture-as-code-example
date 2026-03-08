@@ -28,14 +28,51 @@ As a **customer**, I want to **track the status of my order**, so that I **know 
 
 ## Related Entities
 
-- [Customer](../architecture/domain/customer.md) — Customer viewing orders
-- [Order](../architecture/domain/order.md) — Order status tracked
+- [Customer](../architecture/models/domain/customer.md) — Customer viewing orders
+- [Order](../architecture/models/domain/order.md) — Order status tracked
 
 ---
 
 ## Related Requirements
 
 - **FR-005:** View order history and status ([Requirements](../requirements.md))
+
+---
+
+## Business Rules
+
+- Customers can only view their own orders
+- Order history is sorted by order date descending (most recent first)
+- Status updates should be reflected within 60 seconds of the change occurring
+
+---
+
+## Acceptance Tests
+
+```gherkin
+Scenario: Customer views their order list
+  Given I am logged in as a customer
+  When I navigate to my orders page
+  Then I see a list of my orders sorted by date descending
+
+Scenario: Customer views order details
+  Given I am logged in as a customer
+  And order "order-123" belongs to me
+  When I view the details of order "order-123"
+  Then I see the items, quantities, prices, and total
+  And I see the current status and estimated delivery date
+
+Scenario: Customer cannot view another customer's order
+  Given I am logged in as customer A
+  When I try to access an order belonging to customer B
+  Then I receive a 403 Forbidden response
+```
+
+---
+
+## Related User Stories
+
+- [STORY-002: Place Order](story-002-place-order.md) — Order creation
 
 ---
 

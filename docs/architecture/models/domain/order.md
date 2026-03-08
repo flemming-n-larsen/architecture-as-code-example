@@ -8,7 +8,7 @@ An order:
 - Belongs to a single customer
 - Contains one or more order items
 - Has a total amount calculated from items
-- Tracks order status (pending, confirmed, shipped, delivered)
+- Tracks order status (pending, confirmed, shipped, delivered, cancelled)
 - Is associated with a single payment
 - Is created with a timestamp
 

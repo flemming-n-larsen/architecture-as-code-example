@@ -23,6 +23,6 @@ This file is the entry point for AI agents working with this codebase. It links 
 ## When in Doubt
 
 1. Check existing code for similar implementations
-3. Consult `/docs/architecture` for structural patterns
-2. Consult `/openspec` for business rules
+2. Consult `/docs/architecture` for structural patterns
+3. Consult `/openspec` for business rules
 4. Keep it simple — don't over-engineer

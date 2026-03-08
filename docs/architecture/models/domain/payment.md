@@ -7,7 +7,7 @@ The Payment entity represents a payment transaction for an order.
 A payment:
 - Belongs to a single order (1:1 relationship)
 - Has an amount that matches the order total
-- Tracks payment status (pending, successful, failed)
+- Tracks payment status (pending, processing, authorized, captured, successful, failed, refunded)
 - Records when payment was processed
 - Integrates with external payment gateway (e.g., Stripe)
 
@@ -60,7 +60,9 @@ erDiagram
 |--------|-------------|
 | `pending` | Payment initiated, awaiting gateway response |
 | `processing` | Payment being processed by gateway |
-| `successful` | Payment completed successfully |
+| `authorized` | Payment authorized by gateway, awaiting capture |
+| `captured` | Payment captured (funds collected) — equivalent to successful |
+| `successful` | Payment completed successfully (alias for captured in some flows) |
 | `failed` | Payment failed (insufficient funds, invalid card, etc.) |
 | `refunded` | Payment was refunded to customer |
 
@@ -70,12 +72,14 @@ erDiagram
 stateDiagram-v2
     [*] --> pending: Payment initiated
     pending --> processing: Gateway receives request
-    processing --> successful: Gateway confirms payment
+    processing --> authorized: Gateway authorizes payment
     processing --> failed: Gateway rejects payment
-    successful --> refunded: Refund issued
+    authorized --> captured: Payment captured (funds collected)
+    authorized --> failed: Capture fails
+    captured --> refunded: Refund issued
     failed --> [*]
     refunded --> [*]
-    successful --> [*]: (final state for most orders)
+    captured --> [*]: (final state for most orders)
 ```
 
 ## Relationships

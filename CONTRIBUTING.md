@@ -16,14 +16,7 @@ This repository demonstrates **Architecture as Code** — keeping all diagrams a
 
 ### Contribution Scope
 
-| Path         | Open for contributions | Notes                                                                  |
-|--------------|:----------------------:|------------------------------------------------------------------------|
-| `docs/`      |           ✅            | Architecture specs, ADRs, C4 views, domain models, flows, user stories |
-| `openspec/`  |           ✅            | Spec-driven development examples                                       |
-| `src/`       |           ✅            | Source code                                                            |
-| `tests/`     |           ✅            | Tests                                                                  |
-| `.articles/` |           🤝           | Personal article series — open to collaboration, not direct PRs        |
-
+e
 The `.articles/` folder contains a personal article series published on GitHub and [Hashnode](https://architecture-as-code.hashnode.dev/), and referenced from LinkedIn. These are written and published by the author, so please don't submit PRs directly against them. That said, if you have an idea for a new article or want to collaborate on one, reach out at **flemming.n.larsen (at) gmail.com** — happy to discuss!
 
 ---
@@ -39,8 +32,8 @@ The `.articles/` folder contains a personal article series published on GitHub a
 ### Fork and Clone
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/architecture-diagrams-in-code.git
-cd architecture-diagrams-in-code
+git clone https://github.com/YOUR_USERNAME/architecture-as-code-example.git
+cd architecture-as-code-example
 ```
 
 ---

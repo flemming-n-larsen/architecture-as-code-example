@@ -1,4 +1,4 @@
-#---
+---
 id: 0002
 title: Microservices Architecture
 status: Pending
@@ -78,8 +78,8 @@ Initial implementation steps:
 
 ## References
 
-- Architecture C4 views: ../c4-views/container.md
-- Related ADR: ADR-0003 (Event-Driven Communication)
+- [Architecture C4 views](../c4-views/container.md)
+- [Related ADR: ADR-0003 (Event-Driven Communication)](0003-event-driven-communication.md)
 
 ## Review and Updates
 

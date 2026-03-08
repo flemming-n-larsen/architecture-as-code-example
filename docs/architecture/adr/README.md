@@ -11,8 +11,8 @@ This directory contains the ADRs for the e-commerce system architecture, organiz
 | Status | ID | Title | Date |
 |--------|----|----|------|
 | ✅ Accepted | [0001](0001-use-uuid-primary-keys.md) | Use UUIDs for Primary Keys | 2026-01-12 |
-| 🔄 Pending | [0002](0002-microservices-architecture.md) | Microservices Architecture | - |
-| 🔄 Pending | [0003](0003-event-driven-communication.md) | Event-Driven Communication | - |
+| 🔄 Pending | [0002](0002-microservices-architecture.md) | Microservices Architecture | 2026-02-25 |
+| 🔄 Pending | [0003](0003-event-driven-communication.md) | Event-Driven Communication | 2026-02-25 |
 
 ---
 

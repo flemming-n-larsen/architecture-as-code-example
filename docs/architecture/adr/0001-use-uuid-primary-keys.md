@@ -1,4 +1,4 @@
-#---
+---
 id: 0001
 title: Use UUIDs for Primary Keys
 status: Accepted

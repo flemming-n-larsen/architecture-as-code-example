@@ -108,7 +108,7 @@ The Payment entity represents a payment transaction for an order.
 - Unique identity (UUID)
 - Order reference (1:1 relationship)
 - Payment amount
-- Status tracking (pending, processing, successful, failed, refunded)
+- Status tracking (pending, processing, authorized, captured, successful, failed, refunded)
 - Gateway transaction ID for external integrations
 
 **Key Relationships:**

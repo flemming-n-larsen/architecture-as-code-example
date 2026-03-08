@@ -28,7 +28,7 @@ As a **new user**, I want to **create an account with my email and password**, s
 
 ## Related Entities
 
-- [Customer](../architecture/domain/customer.md) — Customer entity created
+- [Customer](../architecture/models/domain/customer.md) — Customer entity created
 
 ---
 

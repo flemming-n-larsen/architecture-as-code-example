@@ -46,7 +46,7 @@ The E-Commerce Platform follows a **microservices architecture** with clear sepa
   - SQL with Customer Database
   - Redis caching for frequently accessed profiles
   - AMQP events via Message Broker
-- **🔗 Deep Dive:** See [Customer Service Component View](order-service-component.md) for internal architecture
+- **🔗 Deep Dive:** Customer Service Component View (not yet documented)
 
 **Order Service** 📦
 - **Technology:** Node.js

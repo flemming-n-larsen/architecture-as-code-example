@@ -31,19 +31,19 @@ As a **customer**, I want to **place an order with multiple products**, so that 
 
 ## Related Entities
 
-- [Customer](../architecture/domain/customer.md) — Places the order
-- [Order](../architecture/domain/order.md) — Order entity created
-- [OrderItem](../architecture/domain/order-item.md) — Items in the order
-- [Product](../architecture/domain/product.md) — Products being ordered
-- [Payment](../architecture/domain/payment.md) — Payment for the order
+- [Customer](../architecture/models/domain/customer.md) — Places the order
+- [Order](../architecture/models/domain/order.md) — Order entity created
+- [OrderItem](../architecture/models/domain/order-item.md) — Items in the order
+- [Product](../architecture/models/domain/product.md) — Products being ordered
+- [Payment](../architecture/models/domain/payment.md) — Payment for the order
 
 ---
 
 ## Related Flows
 
-- [Create Order Flow](../architecture/flows/create-order.md) — Complete order creation process
-- [Payment Processing Flow](../architecture/flows/payment-processing.md) — Payment handling
-- [Inventory Management Flow](../architecture/flows/inventory-management.md) — Stock updates
+- [Create Order Flow](../architecture/models/flows/create-order.md) — Complete order creation process
+- [Payment Processing Flow](../architecture/models/flows/payment-processing.md) — Payment handling
+- [Inventory Management Flow](../architecture/models/flows/inventory-management.md) — Stock updates
 
 ---
 

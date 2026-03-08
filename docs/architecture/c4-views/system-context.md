@@ -35,7 +35,7 @@ The **E-Commerce Platform** 🛒 is the central software system that serves as t
 
 ## Key Actors
 
-### 1. **Customer** 🛍️
+### 1️⃣ **Customer** 🛍️
 
 **Role:** End-user who purchases products from the platform
 
@@ -52,7 +52,7 @@ The **E-Commerce Platform** 🛒 is the central software system that serves as t
 
 ---
 
-### 2. **Administrator** 👨‍💼
+### 2️⃣ **Administrator** 👨‍💼
 
 **Role:** Internal system user with elevated privileges
 
@@ -72,7 +72,7 @@ The **E-Commerce Platform** 🛒 is the central software system that serves as t
 
 ## External Systems
 
-### 1. **Payment Gateway** 💳
+### 1️⃣ **Payment Gateway** 💳
 
 **Type:** Third-party payment processor (e.g., Stripe, PayPal)
 
@@ -95,7 +95,7 @@ The **E-Commerce Platform** 🛒 is the central software system that serves as t
 
 ---
 
-### 2. **Email Service** 📧
+### 2️⃣ **Email Service** 📧
 
 **Type:** External email delivery service
 
