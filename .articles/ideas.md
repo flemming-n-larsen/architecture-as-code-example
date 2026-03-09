@@ -4,7 +4,7 @@ Future articles for the **Architecture as Code** series.
 
 ---
 
-## 5. Vibe Coding vs. Professional AI Development: Know When to Throw It Away
+## Vibe Coding vs. Professional AI Development: Know When to Throw It Away
 
 **Status:** Idea
 
@@ -30,7 +30,7 @@ Future articles for the **Architecture as Code** series.
 
 ---
 
-## 6. Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests
+## Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests
 
 **Status:** Next up (referenced in [article 4](4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md))
 
@@ -51,33 +51,29 @@ Future articles for the **Architecture as Code** series.
 
 ---
 
-## 7. Skill-Driven Development: Portable Expert Knowledge for AI
+## Expert Knowledge as Code: Portable AI Lenses
 
 **Status:** Idea
 
-**Core idea:** Specs tell the AI *what to build this time*. Skills tell the AI *how we build things here, always*. Without a
-skills layer, every spec starts from zero and the AI carries no memory across projects. Skill-Driven Development encodes
-expert knowledge — patterns, constraints, conventions, architectural judgment — as portable, versioned skill files that
+**Core idea:** Specs tell the AI *what to build this time*. Lenses tell the AI *how we build things here, always*. Without a
+knowledge layer, every spec starts from zero and the AI carries no memory across projects. Expert Knowledge as Code encodes
+expert knowledge — patterns, constraints, conventions, architectural judgment — as portable, versioned lens files that
 travel with you across projects and AI tools.
 
-**Credit:** The specs vs. skills distinction was sharpened by a
-[LinkedIn comment from Thor Henning Hetland](https://www.linkedin.com/in/thorhenning/) (CTO, eXOReaction / Cantara):
-*"Specs describe what to build this time. Skills encode how we build things here, always — patterns, constraints,
-conventions, institutional knowledge. Without a skills layer, every spec you write starts from zero and the AI carries no
-memory across projects. Spec-driven gets you faster execution per task. Skill-driven gets you compounding returns across
-everything."*
+**Credit:** The specs-vs-knowledge distinction was sharpened by a conversation with Totto, who pointed out that specs
+alone leave the AI without memory across projects. The framing stuck — but the terminology and approach here are my own.
 
 **The two layers:**
 
 | Layer  | What it encodes                                       | Scope              | Changes          | Example files                        |
 |--------|-------------------------------------------------------|---------------------|------------------|--------------------------------------|
 | Specs  | What to build — intent, acceptance criteria, tasks    | Per feature/change  | Every sprint     | `proposal.md`, `spec.md`, `tasks.md` |
-| Skills | How we build — patterns, conventions, expert judgment | Across all projects | Slowly, by choice | `AGENTS.md`, `.ai/*.md`, skill files |
+| Lenses | How we build — patterns, conventions, expert judgment | Across all projects | Slowly, by choice | `AGENTS.md`, `.ai/*.md`, lens files  |
 
-**The key insight:** Spec-driven development gives you faster execution per task. Skill-driven development gives you
+**The key insight:** Specs give you faster execution per task. A knowledge layer gives you
 compounding returns across everything. Both layers matter — and they are complementary, not competing.
 
-**What counts as a "skill file"?**
+**What counts as a "lens file"?**
 
 - **Team conventions:** Code style, naming rules, error handling patterns, testing strategy (`AGENTS.md`, `.ai/`)
 - **Architectural guardrails:** "We use ports-and-adapters", "No synchronous cross-service calls", ADR summaries
@@ -87,7 +83,8 @@ compounding returns across everything. Both layers matter — and they are compl
 
 Thinkers like Martin Fowler, David Farley, Kent Beck, Eric Evans, Rich Hickey, and Gregor Hohpe have large,
 well-documented bodies of work. Their principles are clear, consistent, and well-articulated — exactly what makes a good
-skill file. Instead of asking "is this good?", you ask: *"Review this against the Farley lens"* or *"Does this violate
+lens file. The names below are used as *inspiration*, not endorsements — the lens files themselves encode principles, not
+personas. Instead of asking "is this good?", you ask: *"Review this against the Farley lens"* or *"Does this violate
 Fowler's refactoring principles?"*
 
 | Expert lens   | Focus                                            | Source material                  |
@@ -99,7 +96,7 @@ Fowler's refactoring principles?"*
 | Rich Hickey   | Simplicity, data-oriented design, immutability   | Simple Made Easy, Clojure talks  |
 | Gregor Hohpe  | Integration patterns, architecture elevator      | EIP, Software Architect Elevator |
 
-**Your own skill file — AoC-SDD:**
+**Your own lens file — AoC-SDD:**
 
 - Architecture-as-code + spec-driven development + agentic AI workflows
 - The combination is specific and opinionated, even if individual ideas build on existing work
@@ -107,13 +104,13 @@ Fowler's refactoring principles?"*
 
 **Topics to cover:**
 
-- The specs vs. skills distinction — why you need both layers
-- What a skill file looks like in practice: structure, format, versioning
-- How skill files travel: across repos, across AI tools (Copilot, Cursor, Claude, etc.)
-- Expert lenses as skill files — practical workflow: *"Run this ADR past the Farley lens and the Fowler lens"*
-- Building your own skill file: documenting your principles clearly enough for an AI to apply them
+- The specs vs. lenses distinction — why you need both layers
+- What a lens file looks like in practice: structure, format, versioning
+- How lens files travel: across repos, across AI tools (Copilot, Cursor, Claude, etc.)
+- Expert lenses as lens files — practical workflow: *"Run this ADR past the Farley lens and the Fowler lens"*
+- Building your own lens file: documenting your principles clearly enough for an AI to apply them
 - Could expert lenses become open-source community contributions?
-- When skill-driven review adds value vs. when it is noise
+- When lens-based review adds value vs. when it is noise
 - The line between tribute and parody with expert lenses — keep it respectful and useful
 
 **Honest tensions to address:**
@@ -124,9 +121,8 @@ Fowler's refactoring principles?"*
   judgment actually remains uniquely human — and for how long.
 - Whether AI commoditizes all knowledge work, not just coding, is a real open question. This article should engage with
   it honestly rather than assume developers will always be needed in their current role.
-- "Skill-Driven Development" is not (yet) an established methodology — unlike Spec-Driven Development, it has no
-  Wikipedia page or published literature. This article would be contributing a new framing, not describing an existing
-  one. Be upfront about that.
+- "Expert Knowledge as Code" is a framing, not an established methodology — this article contributes a new lens (pun
+  intended) on how to structure AI knowledge, not a textbook term. Be upfront about that.
 
 ---
 
