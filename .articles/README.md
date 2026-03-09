@@ -15,6 +15,7 @@
 ### 💡 [Article Ideas](ideas.md)
 
 Future article ideas including:
-- **5.** Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests *(next up)*
-- **6.** AI Review Personas: Thinking Partners from First Principles *(idea)*
+- **6.** Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests *(next up)*
+- **7.** Skill-Driven Development: Portable Expert Knowledge for AI *(idea)*
+- **5.** Vibe Coding vs. Professional AI Development: Know When to Throw It Away *(idea)*
 

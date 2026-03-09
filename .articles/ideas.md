@@ -51,55 +51,84 @@ Future articles for the **Architecture as Code** series.
 
 ---
 
-## 7. AI Review Personas: Thinking Partners from First Principles
+## 7. Skill-Driven Development: Portable Expert Knowledge for AI
 
 **Status:** Idea
 
-**Core idea:** Create AI "personas" that embody the principles of well-known software thinkers — and use them as review lenses for architecture decisions, specs, and code. Not as gimmicks, but as structured thinking tools.
+**Core idea:** Specs tell the AI *what to build this time*. Skills tell the AI *how we build things here, always*. Without a
+skills layer, every spec starts from zero and the AI carries no memory across projects. Skill-Driven Development encodes
+expert knowledge — patterns, constraints, conventions, architectural judgment — as portable, versioned skill files that
+travel with you across projects and AI tools.
 
-**The concept:**
+**Credit:** The specs vs. skills distinction was sharpened by a
+[LinkedIn comment from Thor Henning Hetland](https://www.linkedin.com/in/thorhenning/) (CTO, eXOReaction / Cantara):
+*"Specs describe what to build this time. Skills encode how we build things here, always — patterns, constraints,
+conventions, institutional knowledge. Without a skills layer, every spec you write starts from zero and the AI carries no
+memory across projects. Spec-driven gets you faster execution per task. Skill-driven gets you compounding returns across
+everything."*
 
-- Thinkers like Martin Fowler, David Farley, Kent Beck, Eric Evans, and Gregor Hohpe have large, well-documented bodies of work — books, articles, talks, blog posts
-- Their principles are clear, consistent, and well-articulated — exactly what makes a good AI persona
-- Instead of asking "is this good?", you ask: *"What would Farley say about this deployment strategy?"* or *"Does this violate Fowler's refactoring principles?"*
-- It's a structured rubber duck — but one that thinks in Continuous Delivery, DDD, or XP
+**The two layers:**
 
-**Possible personas:**
+| Layer  | What it encodes                                       | Scope              | Changes          | Example files                        |
+|--------|-------------------------------------------------------|---------------------|------------------|--------------------------------------|
+| Specs  | What to build — intent, acceptance criteria, tasks    | Per feature/change  | Every sprint     | `proposal.md`, `spec.md`, `tasks.md` |
+| Skills | How we build — patterns, conventions, expert judgment | Across all projects | Slowly, by choice | `AGENTS.md`, `.ai/*.md`, skill files |
 
-| Persona       | Lens                                             | Source material                  |
+**The key insight:** Spec-driven development gives you faster execution per task. Skill-driven development gives you
+compounding returns across everything. Both layers matter — and they are complementary, not competing.
+
+**What counts as a "skill file"?**
+
+- **Team conventions:** Code style, naming rules, error handling patterns, testing strategy (`AGENTS.md`, `.ai/`)
+- **Architectural guardrails:** "We use ports-and-adapters", "No synchronous cross-service calls", ADR summaries
+- **Expert lenses:** Principles from well-known thinkers, encoded as review instructions
+
+**Expert lenses — thinking partners from first principles:**
+
+Thinkers like Martin Fowler, David Farley, Kent Beck, Eric Evans, Rich Hickey, and Gregor Hohpe have large,
+well-documented bodies of work. Their principles are clear, consistent, and well-articulated — exactly what makes a good
+skill file. Instead of asking "is this good?", you ask: *"Review this against the Farley lens"* or *"Does this violate
+Fowler's refactoring principles?"*
+
+| Expert lens   | Focus                                            | Source material                  |
 |---------------|--------------------------------------------------|----------------------------------|
 | Martin Fowler | Refactoring, patterns, evolutionary architecture | Refactoring, PoEAA, bliki        |
 | David Farley  | Continuous Delivery, modern software engineering | CD book, Modern SE book, YouTube |
 | Kent Beck     | TDD, simplicity, XP values                       | TDD by Example, XP Explained     |
 | Eric Evans    | Domain-Driven Design, bounded contexts           | DDD book                         |
+| Rich Hickey   | Simplicity, data-oriented design, immutability   | Simple Made Easy, Clojure talks  |
 | Gregor Hohpe  | Integration patterns, architecture elevator      | EIP, Software Architect Elevator |
 
-**Your own persona — AoC-SDD:**
+**Your own skill file — AoC-SDD:**
 
 - Architecture-as-code + spec-driven development + agentic AI workflows
 - The combination is specific and opinionated, even if individual ideas build on existing work
-- Could be captured as a reusable agent instruction (like `AGENTS.md`)
+- Already partially captured in `AGENTS.md` and `.ai/` — this article makes the pattern explicit and portable
 
 **Topics to cover:**
 
-- How to build a persona: system prompts, custom agents, or `AGENTS.md`-style instructions
-- Practical workflow: "Run this ADR past the Farley lens and the Fowler lens"
-- When persona review adds value vs. when it's noise
-- The line between tribute and parody — keep it respectful and useful
-- Could these personas become open-source community contributions?
-- Building your own persona: documenting your principles clearly enough for an AI to apply them
+- The specs vs. skills distinction — why you need both layers
+- What a skill file looks like in practice: structure, format, versioning
+- How skill files travel: across repos, across AI tools (Copilot, Cursor, Claude, etc.)
+- Expert lenses as skill files — practical workflow: *"Run this ADR past the Farley lens and the Fowler lens"*
+- Building your own skill file: documenting your principles clearly enough for an AI to apply them
+- Could expert lenses become open-source community contributions?
+- When skill-driven review adds value vs. when it is noise
+- The line between tribute and parody with expert lenses — keep it respectful and useful
 
 **Honest tensions to address:**
 
-- The architecture design space (monolith vs. microservices, layered vs. ports-and-adapters, etc.) is finite. LLMs that already generate code will likely generate specs, ADRs, and architecture decisions too — and possibly well.
-- If the value of specs is in *judging* them rather than *producing* them, this article needs to be honest about how much judgment actually remains uniquely human — and for how long.
-- Whether AI commoditizes all knowledge work, not just coding, is a real open question. This article should engage with it honestly rather than assume developers will always be needed in their current role.
+- The architecture design space (monolith vs. microservices, layered vs. ports-and-adapters, etc.) is finite. LLMs that
+  already generate code will likely generate specs, ADRs, and architecture decisions too — and possibly well.
+- If the value of specs is in *judging* them rather than *producing* them, this article needs to be honest about how much
+  judgment actually remains uniquely human — and for how long.
+- Whether AI commoditizes all knowledge work, not just coding, is a real open question. This article should engage with
+  it honestly rather than assume developers will always be needed in their current role.
+- "Skill-Driven Development" is not (yet) an established methodology — unlike Spec-Driven Development, it has no
+  Wikipedia page or published literature. This article would be contributing a new framing, not describing an existing
+  one. Be upfront about that.
 
 ---
 
 > **Note:** This is a personal article series published on GitHub and [Hashnode](https://hashnode.com/), and referenced from LinkedIn — please don't submit PRs directly against articles.
 > Got an idea or want to collaborate on a future one? Reach out at **flemming.n.larsen (at) gmail.com**.
-
-
-
-
