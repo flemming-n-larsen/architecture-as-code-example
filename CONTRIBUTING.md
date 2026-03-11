@@ -4,7 +4,7 @@ Thank you for your interest in contributing! This document explains how to work 
 
 ## Philosophy
 
-This repository demonstrates **Architecture as Code** — keeping all diagrams and documentation in the repository alongside source code, versioned with Git.
+This repository demonstrates **Architecture as Code** — keeping all diagrams and documentation in the repository alongside source code, versioned with Git. This is grounded in the [Plain Text as Code](https://github.com/Plain-Text-as-Code) philosophy: plain text is permanent, portable, and AI-ready.
 
 ### Key Principles
 

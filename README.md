@@ -6,8 +6,8 @@
 [![Markdown](https://img.shields.io/badge/Docs-Markdown-blue.svg)](https://www.markdownguide.org/)
 
 An example demonstrating how to develop software in the agentic AI age across three layers:
-**Architecture as Code** (AoC) · **Spec-Driven Development** (SDD) · **Agentic AI** implementation—all as plain text,
-version-controlled, and AI-readable. AoC itself rests on four pillars: ADRs, C4 views, domain models, and IaC specs.
+**Architecture as Code** (AoC) · **Spec-Driven Development** (SDD) · **Agentic AI** implementation—all as [plain text,
+version-controlled, and AI-readable](https://github.com/Plain-Text-as-Code). AoC itself rests on four pillars: ADRs, C4 views, domain models, and IaC specs.
 
 > **📖 Full Documentation:** See the [Architecture Hub](docs/architecture/README.md) for a complete overview of all architectural artifacts.
 
@@ -412,6 +412,10 @@ Follow the SDD workflow — front-load the thinking, let the AI do the implement
 | 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)                                                     |
 | 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)                  |
 | 5 | [Spec-Driven Test Strategy — Turning Acceptance Criteria into Tests](.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/README.md) |
+
+### Plain Text as Code
+
+- **[Plain Text as Code](https://github.com/Plain-Text-as-Code)** — The manifest behind the mindset: plain text, version-controlled, AI-ready — the philosophy this repository is built on
 
 ### OpenSpec & Spec-Driven Development
 
