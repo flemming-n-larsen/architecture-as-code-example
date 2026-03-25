@@ -30,27 +30,6 @@ Future articles for the **Architecture as Code** series.
 
 ---
 
-## Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests
-
-**Status:** Done in repo ([article 5](5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/README.md); referenced in [article 4](4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md))
-
-**Core idea:** Acceptance criteria written in specs are not just documentation — they are test definitions waiting to be executed. This article shows how to go from spec → acceptance test → implementation, closing the verification loop.
-
-**Topics to cover:**
-
-- ATDD / BDD as a natural extension of SDD
-- Mapping acceptance criteria (from `proposal.md` / `spec.md`) directly to test cases
-- Who writes the tests — human, AI, or both?
-- The role of the spec as the single source of truth for "done"
-- Gherkin / plain-language specs vs. code-level test frameworks
-- How agentic AI can generate test scaffolding from specs
-- When to test manually vs. automate — and how specs help decide
-- Continuous Delivery angle: tests as the deployment gate, not code review
-- Reference: [Acceptance Testing — CD Training](https://courses.cd.training/pages/acceptance-testing)
-- Reference: David Farley's work on ATDD and Continuous Delivery
-
----
-
 ## Expert Knowledge as Code: Portable AI Lenses
 
 **Status:** Idea
