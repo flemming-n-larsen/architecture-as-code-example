@@ -4,6 +4,10 @@
 
 ---
 
+👉 [Read on Hashnode](https://architecture-as-code.hashnode.dev/spec-driven-test-strategy-turning-acceptance-criteria-into-tests)
+
+---
+
 This article builds on the foundation from the previous 'Architecture as Code' articles:
 
 - [Keep Your Architecture Diagrams in Code, Not in Tools](../1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code%2C%20Not%20in%20Tools/README.md)

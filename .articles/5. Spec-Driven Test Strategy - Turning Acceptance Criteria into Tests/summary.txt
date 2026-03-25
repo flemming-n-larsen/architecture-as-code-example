@@ -1,0 +1,35 @@
+New post: Turning acceptance criteria into tests that actually prove something.
+
+I just published a new article about a simple but important idea:
+Acceptance criteria are not just documentation - they are test definitions waiting to be executed. 🧪
+
+If every acceptance criterion has:
+- a stable ID
+- a clear test type
+- both a positive and a negative test
+- a traceable reference in the test code
+
+... then a change proposal stops being just a plan and becomes a self-proving unit of work. ✅
+
+The point is not "more tests."
+The point is a tighter link between intent -> proof. 🎯
+
+That matters even more in a world where AI can generate a lot of code very quickly.
+If intent is unclear and proof is unclear, speed can easily come at the cost of quality. 🤖
+
+In the article, I argue that:
+- the spec is the design artifact
+- tests are the executable proof package
+- CI should enforce the contract
+
+In short:
+- Stop guessing.
+- Start measuring.
+- Start proving.
+
+If you work with spec-driven development, architecture as code, or AI-assisted development, I think this perspective will resonate.
+
+Read the article here:
+https://architecture-as-code.hashnode.dev/spec-driven-test-strategy-turning-acceptance-criteria-into-tests
+
+#ArchitectureAsCode #SpecDrivenDevelopment #Testing #AI #SoftwareArchitecture #QualityEngineering

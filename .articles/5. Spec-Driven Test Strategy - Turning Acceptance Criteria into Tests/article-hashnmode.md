@@ -1,6 +1,6 @@
 # 🧪 Spec-Driven Test Strategy — Turning Acceptance Criteria into Tests
 
-**How to turn `proposal.md` and `spec.md` into executable proof**
+**How to turn proposal and spec into executable proof**
 
 ---
 
@@ -819,7 +819,7 @@ And the implementation is not done until that proof passes.
 
 ← **[Previous: Think in Specs — The Modern Developer's Mindset](https://architecture-as-code.hashnode.dev/think-in-specs-the-modern-developers-mindset)**
 
-→ **[Up next: Expert Knowledge as Code: Portable AI Lenses](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/ideas.md#expert-knowledge-as-code-portable-ai-lenses)**
+→ **[Up next: Expert Knowledge as Code: Portable AI Lenses](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/ideas.md#expert-knowledge-as-code-portable-ai-lenses)** **(Future article)**
 
 ---
 
