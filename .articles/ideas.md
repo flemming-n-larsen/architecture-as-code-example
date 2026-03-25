@@ -32,7 +32,7 @@ Future articles for the **Architecture as Code** series.
 
 ## Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests
 
-**Status:** Next up (referenced in [article 4](4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md))
+**Status:** Drafted in repo ([article 5](5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/README.md); referenced in [article 4](4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md))
 
 **Core idea:** Acceptance criteria written in specs are not just documentation — they are test definitions waiting to be executed. This article shows how to go from spec → acceptance test → implementation, closing the verification loop.
 
@@ -65,9 +65,9 @@ alone leave the AI without memory across projects. The framing stuck — but the
 
 **The two layers:**
 
-| Layer  | What it encodes                                       | Scope              | Changes          | Example files                        |
-|--------|-------------------------------------------------------|---------------------|------------------|--------------------------------------|
-| Specs  | What to build — intent, acceptance criteria, tasks    | Per feature/change  | Every sprint     | `proposal.md`, `spec.md`, `tasks.md` |
+| Layer  | What it encodes                                       | Scope               | Changes           | Example files                        |
+|--------|-------------------------------------------------------|---------------------|-------------------|--------------------------------------|
+| Specs  | What to build — intent, acceptance criteria, tasks    | Per feature/change  | Every sprint      | `proposal.md`, `spec.md`, `tasks.md` |
 | Lenses | How we build — patterns, conventions, expert judgment | Across all projects | Slowly, by choice | `AGENTS.md`, `.ai/*.md`, lens files  |
 
 **The key insight:** Specs give you faster execution per task. A knowledge layer gives you

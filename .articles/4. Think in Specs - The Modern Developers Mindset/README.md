@@ -213,7 +213,7 @@ Thanks also to the **[Modern Software Engineering](https://www.youtube.com/watch
 
 ← **[Previous: Architecture as Code in Practice](../3.%20Architecture%20as%20Code%20in%20Practice/README.md)**
 
-→ **[Up next: Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests](#)** *(future article)*
+→ **[Up next: Spec-Driven Test Strategy: Turning Acceptance Criteria into Tests](../5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/README.md)**
 
 ---
 

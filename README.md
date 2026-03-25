@@ -23,6 +23,7 @@ This repository accompanies this article series:
 | 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)                         | Spec-driven development so AI agents respect your architecture      |
 | 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)                                                     | ADRs, C4 diagrams, and domain models working together               |
 | 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)                  | The mindset that ties architecture, design, and agentic AI together |
+| 5 | [Spec-Driven Test Strategy — Turning Acceptance Criteria into Tests](.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/README.md) | How AC IDs, test types, and coverage rules turn specs into executable proof |
 
 ---
 
@@ -410,6 +411,7 @@ Follow the SDD workflow — front-load the thinking, let the AI do the implement
 | 2 | [Keep Your AI and Architecture/Design in Sync](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)                         |
 | 3 | [Architecture as Code in Practice](.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)                                                     |
 | 4 | [Think in Specs — The Modern Developer's Mindset](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)                  |
+| 5 | [Spec-Driven Test Strategy — Turning Acceptance Criteria into Tests](.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/README.md) |
 
 ### OpenSpec & Spec-Driven Development
 
