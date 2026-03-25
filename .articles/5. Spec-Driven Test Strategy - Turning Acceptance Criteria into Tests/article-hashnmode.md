@@ -6,10 +6,10 @@
 
 This article builds on the foundation from the previous 'Architecture as Code' articles:
 
-- [Keep Your Architecture Diagrams in Code, Not in Tools](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/1.%20Keep%20Your%20Architecture%20Diagrams%20in%20Code%2C%20Not%20in%20Tools/README.md)
-- [Keep Your AI and Architecture-Design in Sync](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md)
-- [Architecture as Code in Practice](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/3.%20Architecture%20as%20Code%20in%20Practice/README.md)
-- [Think in Specs — The Modern Developer's Mindset](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)
+- [Keep Your Architecture Diagrams in Code, Not in Tools](https://architecture-as-code.hashnode.dev/keep-your-architecture-diagrams-in-code-not-in-tools)
+- [Keep Your AI and Architecture-Design in Sync](https://architecture-as-code.hashnode.dev/keep-your-ai-and-architecturedesign-in-sync)
+- [Architecture as Code in Practice](https://architecture-as-code.hashnode.dev/architecture-as-code-in-practice)
+- [Think in Specs — The Modern Developer's Mindset](https://architecture-as-code.hashnode.dev/think-in-specs-the-modern-developers-mindset)
 
 ---
 
@@ -45,7 +45,7 @@ Or put even more bluntly:
 
 ## 🔁 The Missing Link from Article 4
 
-In [article 4](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md), I argued that the real work in the agentic AI age is still architecture + design + implementation — just with AI increasingly doing the code generation.
+In [article 4](https://architecture-as-code.hashnode.dev/think-in-specs-the-modern-developers-mindset), I argued that the real work in the agentic AI age is still architecture + design + implementation — just with AI increasingly doing the code generation.
 
 But that raises the obvious question:
 
@@ -56,7 +56,7 @@ The answer is: **make the acceptance criteria executable.**
 
 That means the loop becomes:
 
-![Change proposal to proof loop](https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/change-proposal-loop.png)
+<img src="https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/change-proposal-loop.png" alt="Change proposal to proof loop" width="225">
 
 If that chain is intact, you no longer have "tests somewhere."  
 You have **proof attached directly to design intent**.
@@ -197,7 +197,7 @@ And if a scenario has no declared test type, that is a smell for the same reason
 
 Here's a practical layered strategy:
 
-![Layered testing strategy](https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/layered-strategy.png)
+<img src="https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/layered-strategy.png" alt="Layered testing strategy" width="210">
 
 | Category | Layer | Typical frameworks | Use it for |
 |---|---|---|---|
@@ -386,7 +386,7 @@ your teammates a chance to review the intent, catch flaws, challenge assumptions
 change is still cheap to reshape. Reviewing the proposal and specs first is usually far higher leverage than reviewing a
 large batch of generated code after the fact.
 
-![Proposal, test package, and implementation relationship](https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/test-package.png)
+<img src="https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/test-package.png" alt="Proposal, test package, and implementation relationship" width="900">
 
 If the code passes the test package, then the code fulfills the intent of the proposal.
 
@@ -456,7 +456,7 @@ That rhythm matters a lot in practice.
 
 Instead of treating the proposal as one giant implementation-and-test event, treat it as a sequence:
 
-![Incremental implementation and proof process](https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/process.png)
+<img src="https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/process.png" alt="Incremental implementation and proof process" width="250">
 
 The workflow becomes:
 
@@ -699,7 +699,7 @@ The basic enforcement loop is:
 
 That turns "please remember to test this" into a policy.
 
-![CI policy matrix for test layers](https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/policy.png)
+<img src="https://raw.githubusercontent.com/flemming-n-larsen/architecture-as-code-example/main/.articles/5.%20Spec-Driven%20Test%20Strategy%20-%20Turning%20Acceptance%20Criteria%20into%20Tests/illustrations/policy.png" alt="CI policy matrix for test layers" width="350">
 
 ### A practical CI matrix
 
@@ -817,7 +817,7 @@ And the implementation is not done until that proof passes.
 
 ## 📖 Navigation
 
-← **[Previous: Think in Specs — The Modern Developer's Mindset](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md)**
+← **[Previous: Think in Specs — The Modern Developer's Mindset](https://architecture-as-code.hashnode.dev/think-in-specs-the-modern-developers-mindset)**
 
 → **[Up next: Expert Knowledge as Code: Portable AI Lenses](https://github.com/flemming-n-larsen/architecture-as-code-example/blob/main/.articles/ideas.md#expert-knowledge-as-code-portable-ai-lenses)**
 
