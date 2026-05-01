@@ -20,7 +20,7 @@ This article builds on the foundation from the previous 'Architecture as Code' a
 
 Your job is still software development — **just without the coding.**
 
-The previous articles showed *how* to store architecture as code (AoC), *how* to design features before writing code ([SDD](https://en.wikipedia.org/wiki/Spec-driven_development)), and *how* to use agentic AI to do the implementation. This article is about the mindset that ties it all together: **nothing has fundamentally changed about how we develop software — we still work across architecture, design, and implementation.** We have simply stopped being required to write the production code ourselves.
+The previous articles showed *how* to store architecture as code (AaC), *how* to design features before writing code ([SDD](https://en.wikipedia.org/wiki/Spec-driven_development)), and *how* to use agentic AI to do the implementation. This article is about the mindset that ties it all together: **nothing has fundamentally changed about how we develop software — we still work across architecture, design, and implementation.** We have simply stopped being required to write the production code ourselves.
 
 ---
 
@@ -43,7 +43,7 @@ In the agentic AI age, these map directly to:
 
 | Layer              | Practice                      | Tooling                                             |
 |--------------------|-------------------------------|-----------------------------------------------------|
-| **Architecture**   | Architecture as Code (AoC)    | Markdown, Mermaid, [ADRs](https://adr.github.io/madr/), [C4 Views](https://c4model.com/) |
+| **Architecture**   | Architecture as Code (AaC)    | Markdown, Mermaid, [ADRs](https://adr.github.io/madr/), [C4 Views](https://c4model.com/) |
 | **Design**         | [Spec-Driven Development (SDD)](https://en.wikipedia.org/wiki/Spec-driven_development) | [OpenSpec](https://openspec.dev/), proposal.md, design.md, tasks.md, spec.md |
 | **Implementation** | Agentic AI                    | Claude Code, GitHub Copilot, Cursor…                |
 
@@ -138,18 +138,18 @@ For the full OpenSpec workflow (steps, prompts, and a worked example), see [Keep
 
 ## 🔁 The Complete Workflow
 
-AoC + SDD + Agentic AI form a closed loop:
+AaC + SDD + Agentic AI form a closed loop:
 
 ```mermaid
 graph TD
-    AoC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · Flows"]
+    AaC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · Flows"]
     SDD["📋 Spec-Driven Development<br>Change proposals · Specs · Tasks"]
     AI["⚙️ Agentic AI<br>Implementation · Archiving"]
     Repo["📜 Mono-repo<br>Single source of truth"]
 
-    Repo --> AoC
+    Repo --> AaC
     Repo --> SDD
-    AoC -->|"Context & constraints"| SDD
+    AaC -->|"Context & constraints"| SDD
     SDD -->|"Intent & tasks"| AI
     AI -->|"Archived delta"| Repo
 ```

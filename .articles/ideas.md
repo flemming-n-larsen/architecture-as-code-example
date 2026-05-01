@@ -23,7 +23,7 @@ Future articles for the **Architecture as Code** series.
 - Why it breaks down at scale: no architecture guardrails, no specs, no maintainability
 - The "legacy code at scale" risk: AI will happily generate unmaintainable code if you let it (ref: Dave Farley & Steve Smith)
 - The prototype-to-production trap: when teams ship vibe code because "it works"
-- How AoC + SDD is the professional counterpart — not the enemy of speed, but the enabler of sustained speed
+- How AaC + SDD is the professional counterpart — not the enemy of speed, but the enabler of sustained speed
 - The honest message: vibe coding isn't wrong — it's just not the whole job
 
 **Inspiration:** Dave Farley & Steve Smith discussion on the Modern Software Engineering channel — distinguishing citizen developers using AI for personal scripts vs. professional engineering at enterprise scale.
@@ -75,7 +75,7 @@ Fowler's refactoring principles?"*
 | Rich Hickey   | Simplicity, data-oriented design, immutability   | Simple Made Easy, Clojure talks  |
 | Gregor Hohpe  | Integration patterns, architecture elevator      | EIP, Software Architect Elevator |
 
-**Your own lens file — AoC-SDD:**
+**Your own lens file — AaC-SDD:**
 
 - Architecture-as-code + spec-driven development + agentic AI workflows
 - The combination is specific and opinionated, even if individual ideas build on existing work

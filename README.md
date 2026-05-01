@@ -6,8 +6,8 @@
 [![Markdown](https://img.shields.io/badge/Docs-Markdown-blue.svg)](https://www.markdownguide.org/)
 
 An example demonstrating how to develop software in the agentic AI age across three layers:
-**Architecture as Code** (AoC) · **Spec-Driven Development** (SDD) · **Agentic AI** implementation—all as [plain text,
-version-controlled, and AI-readable](https://github.com/Plain-Text-as-Code). AoC itself rests on four pillars: ADRs, C4 views, domain models, and IaC specs.
+**Architecture as Code** (AaC) · **Spec-Driven Development** (SDD) · **Agentic AI** implementation—all as [plain text,
+version-controlled, and AI-readable](https://github.com/Plain-Text-as-Code). AaC itself rests on four pillars: ADRs, C4 views, domain models, and IaC specs.
 
 > **📖 Full Documentation:** See the [Architecture Hub](docs/architecture/README.md) for a complete overview of all architectural artifacts.
 
@@ -49,7 +49,7 @@ Software development still moves through three layers — AI changes *who* does 
 
 | Layer | Practice | What lives here |
 |:------|:---------|:----------------|
-| **🏛️ Architecture** | Architecture as Code (AoC) | ADRs, C4 diagrams, domain models, flows, IaC specs |
+| **🏛️ Architecture** | Architecture as Code (AaC) | ADRs, C4 diagrams, domain models, flows, IaC specs |
 | **📋 Design** | [Spec-Driven Development (SDD)](https://en.wikipedia.org/wiki/Spec-driven_development) | Change proposals, specs, tasks |
 | **⚙️ Implementation** | Agentic AI | Code — written by the AI from the spec |
 
@@ -140,18 +140,18 @@ guardrails govern it.
 
 ## 🏗️ The Complete Workflow
 
-AoC + SDD + Agentic AI form a closed loop — the mono-repo is the single source of truth:
+AaC + SDD + Agentic AI form a closed loop — the mono-repo is the single source of truth:
 
 ```mermaid
 graph TD
-    AoC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · IaC specs"]
+    AaC["🏛️ Architecture as Code<br>ADRs · C4 · Domain models · IaC specs"]
     SDD["📋 Spec-Driven Development<br>Change proposals · Specs · Tasks"]
     AI["⚙️ Agentic AI<br>Implementation · Archiving"]
     Repo["📜 Mono-repo<br>Single source of truth"]
 
-    Repo --> AoC
+    Repo --> AaC
     Repo --> SDD
-    AoC -->|"Context & constraints"| SDD
+    AaC -->|"Context & constraints"| SDD
     SDD -->|"Intent & tasks"| AI
     AI -->|"Archived delta"| Repo
 ```
@@ -235,7 +235,7 @@ them as specs means they live in the repo alongside ADRs and C4 diagrams, and ca
 
 ## 🔄 Beyond Architecture: OpenSpec Integration
 
-**OpenSpec** complements AoC with [Spec-Driven Development](https://en.wikipedia.org/wiki/Spec-driven_development):
+**OpenSpec** complements AaC with [Spec-Driven Development](https://en.wikipedia.org/wiki/Spec-driven_development):
 write a change proposal before any code is written, let an AI implement task by task from the spec, then archive the
 delta back into the specs. The workflow is deliberately front-loaded — design issues surface when they are inexpensive to fix.
 
@@ -249,7 +249,7 @@ delta back into the specs. The workflow is deliberately front-loaded — design 
 - **[AGENTS.md](./AGENTS.md)** — Guidelines for AI agents working with specs and code
 
 > For the full SDD workflow (steps, prompts, and a worked example), see [Article 2](.articles/2.%20Keep%20Your%20AI%20and%20Architecture-Design%20in%20Sync/README.md).
-> For the mindset behind combining AoC + SDD + Agentic AI, see [Article 4](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md).
+> For the mindset behind combining AaC + SDD + Agentic AI, see [Article 4](.articles/4.%20Think%20in%20Specs%20-%20The%20Modern%20Developers%20Mindset/README.md).
 
 ---
 
