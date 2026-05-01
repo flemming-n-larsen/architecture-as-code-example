@@ -35,6 +35,7 @@ graph TD
     C["⚙️ Implementation<br><i>The actual code.<br>Written by an agentic AI.</i>"]
 
     A --> B
+    B --> A
     B --> C
     C -->|"Feedback & new decisions"| A
 ```
